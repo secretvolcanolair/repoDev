@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="meetConfirmation">
+            <connections>
+                <outlet property="companyLabel" destination="omd-1d-Jcg" id="fhC-un-Jbd"/>
+                <outlet property="emailIcon" destination="esD-wc-VOE" id="4yS-HF-dlu"/>
+                <outlet property="facebookIcon" destination="j9n-vL-DBd" id="jVg-OW-2nh"/>
+                <outlet property="facebookSwitch" destination="kqd-0q-Gb7" id="6Ic-b5-7JO"/>
+                <outlet property="goldStar" destination="L22-IV-7cX" id="bH5-wt-CJc"/>
+                <outlet property="instagramIcon" destination="iTw-CP-xhZ" id="mQ5-yc-Q8e"/>
+                <outlet property="instagramSwitch" destination="b7R-yg-EYn" id="Jrc-cw-JX8"/>
+                <outlet property="linkedInIcon" destination="318-SH-V4H" id="mJ8-Es-6qF"/>
+                <outlet property="linkedInSwitch" destination="ogi-JW-bsO" id="6qX-Eu-pwy"/>
+                <outlet property="nameLabel" destination="6TQ-0V-IMv" id="2lL-tb-YcG"/>
+                <outlet property="phoneIcon" destination="9ZA-oS-81z" id="nXa-jQ-DaI"/>
+                <outlet property="profileImage" destination="ezc-sQ-1zk" id="Rue-9e-maB"/>
+                <outlet property="redStar" destination="cNx-p0-a6P" id="Msu-gO-Zsr"/>
+                <outlet property="salesForceSwitch" destination="U1A-qx-pke" id="yi8-Ow-Ybn"/>
+                <outlet property="scrollView" destination="g0M-b5-wne" id="IqB-rX-QbH"/>
+                <outlet property="titleLabel" destination="3FK-nH-pWN" id="m9A-bw-02w"/>
+                <outlet property="twitterIcon" destination="VsW-xK-wbG" id="sgN-Wc-VDy"/>
+                <outlet property="twitterSwitch" destination="BXq-wu-GXO" id="YxU-Fx-Skz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="fPh-Af-mpv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IfZ-ic-DuC">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="405"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="meet_placeholder.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ezc-sQ-1zk">
+                            <rect key="frame" x="113" y="20" width="95" height="95"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="salesforce_logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="HPC-3F-Tes">
+                            <rect key="frame" x="239" y="50" width="51" height="36"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="John Smith" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6TQ-0V-IMv">
+                            <rect key="frame" x="20" y="130" width="280" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Company Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="omd-1d-Jcg">
+                            <rect key="frame" x="20" y="154" width="280" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star_empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="L22-IV-7cX" customClass="Star">
+                            <rect key="frame" x="26" y="59" width="19" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star_empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="cNx-p0-a6P" customClass="Star">
+                            <rect key="frame" x="65" y="59" width="19" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_email.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="esD-wc-VOE">
+                            <rect key="frame" x="76" y="213" width="21" height="14"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_phone.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9ZA-oS-81z">
+                            <rect key="frame" x="224" y="209" width="21" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GGk-f8-CAh">
+                            <rect key="frame" x="21" y="244" width="279" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="social_linkedin.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="318-SH-V4H">
+                            <rect key="frame" x="44" y="270" width="21" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="social_facebook.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="j9n-vL-DBd">
+                            <rect key="frame" x="44" y="315" width="21" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ogi-JW-bsO">
+                            <rect key="frame" x="80" y="265" width="51" height="31"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </switch>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kqd-0q-Gb7">
+                            <rect key="frame" x="80" y="310" width="51" height="31"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </switch>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="social_twitter.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="VsW-xK-wbG">
+                            <rect key="frame" x="192" y="270" width="21" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BXq-wu-GXO">
+                            <rect key="frame" x="228" y="265" width="51" height="31"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </switch>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="social_instagram.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="iTw-CP-xhZ">
+                            <rect key="frame" x="192" y="315" width="21" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b7R-yg-EYn">
+                            <rect key="frame" x="228" y="310" width="51" height="31"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </switch>
+                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="social_salesforce.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="vfK-Rd-IpE">
+                            <rect key="frame" x="192" y="359" width="21" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <switch hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U1A-qx-pke">
+                            <rect key="frame" x="228" y="354" width="51" height="31"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </switch>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Drummer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3FK-nH-pWN">
+                            <rect key="frame" x="20" y="175" width="280" height="19"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="405" id="H3Z-CD-TXz"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0M-b5-wne">
+                    <rect key="frame" x="0.0" y="465" width="320" height="93"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O2n-Ai-c45">
+                            <rect key="frame" x="10" y="0.0" width="665" height="93"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9oj-n4-Dbt">
+                                    <rect key="frame" x="225" y="0.0" width="215" height="93"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.12549019607843137" green="0.58823529411764708" blue="0.6470588235294118" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal" title="CONNECT">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="meetConnectAction:" destination="-1" eventType="touchUpInside" id="TJQ-u2-4Hd"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRz-NA-YMg">
+                                    <rect key="frame" x="450" y="0.0" width="215" height="93"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.99215686274509807" green="0.76470588235294112" blue="0.054901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal" title="LATER">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="meetLaterAction:" destination="-1" eventType="touchUpInside" id="NgQ-Bj-fu9"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSZ-5r-ZXx">
+                                    <rect key="frame" x="0.0" y="0.0" width="215" height="93"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.75294117647058822" green="0.11764705882352941" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal" title="NO">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="meetNoAction:" destination="-1" eventType="touchUpInside" id="vJl-9w-RnJ"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="93" id="976-kJ-avU"/>
+                                <constraint firstAttribute="width" constant="665" id="FfC-fx-3Yc"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="O2n-Ai-c45" secondAttribute="bottom" id="2as-Re-xqZ"/>
+                        <constraint firstItem="O2n-Ai-c45" firstAttribute="top" secondItem="g0M-b5-wne" secondAttribute="top" id="hMn-J0-Nz6"/>
+                        <constraint firstItem="O2n-Ai-c45" firstAttribute="leading" secondItem="g0M-b5-wne" secondAttribute="leading" constant="10" id="nbX-Qw-B2k"/>
+                        <constraint firstAttribute="trailing" secondItem="O2n-Ai-c45" secondAttribute="trailing" constant="10" id="vha-Cw-HOq"/>
+                        <constraint firstAttribute="height" constant="93" id="z7Q-3N-HiA"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="IfZ-ic-DuC" secondAttribute="trailing" id="DWN-C5-Wci"/>
+                <constraint firstItem="IfZ-ic-DuC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VHy-Xo-rZ4"/>
+                <constraint firstAttribute="bottom" secondItem="g0M-b5-wne" secondAttribute="bottom" constant="10" id="Yqp-JG-b6C"/>
+                <constraint firstItem="g0M-b5-wne" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rCm-xk-dfu"/>
+                <constraint firstAttribute="trailing" secondItem="g0M-b5-wne" secondAttribute="trailing" id="tzl-ab-ulA"/>
+                <constraint firstItem="IfZ-ic-DuC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="u74-Zt-KBn"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_email.jpg" width="21" height="14"/>
+        <image name="icon_phone.jpg" width="21" height="21"/>
+        <image name="meet_placeholder.jpg" width="150" height="150"/>
+        <image name="salesforce_logo.jpg" width="51" height="36"/>
+        <image name="social_facebook.jpg" width="21" height="21"/>
+        <image name="social_instagram.jpg" width="21" height="21"/>
+        <image name="social_linkedin.jpg" width="21" height="21"/>
+        <image name="social_salesforce.jpg" width="21" height="21"/>
+        <image name="social_twitter.jpg" width="21" height="21"/>
+        <image name="star_empty.png" width="19" height="18"/>
+    </resources>
+</document>
