@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9C62A60D-9375-42CD-B7E6-5E9880CB6A87</string>
+	<key>IDESourceControlProjectName</key>
+	<string>REON</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>371F536F-3F98-4DBB-A087-32E923206396</key>
+		<string>ssh://github.com/secretvolcanolair/repoDev.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>REON.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>371F536F-3F98-4DBB-A087-32E923206396</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/secretvolcanolair/repoDev.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>371F536F-3F98-4DBB-A087-32E923206396</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>371F536F-3F98-4DBB-A087-32E923206396</string>
+			<key>IDESourceControlWCCName</key>
+			<string>REON-RepoDev</string>
+		</dict>
+	</array>
+</dict>
+</plist>
