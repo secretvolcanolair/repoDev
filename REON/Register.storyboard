@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="1g7-Ie-4HO">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Splash-->
+        <scene sceneID="MgK-bl-VPA">
+            <objects>
+                <viewController id="QVn-jN-cP3" customClass="Splash" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4u2-cx-5pF"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Ye-ZK-bKX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8iV-vu-tmW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="DLU-ae-Kx4">
+                                <rect key="frame" x="20" y="35" width="280" height="217"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="RKH-jB-LzQ"/>
+                                    <constraint firstAttribute="height" constant="217" id="kDJ-Kx-DAh"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kfs-xR-a3B">
+                                <rect key="frame" x="0.0" y="397" width="320" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nH6-Qk-GLi">
+                                        <rect key="frame" x="61" y="20" width="199" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="GRq-83-yhq"/>
+                                            <constraint firstAttribute="width" constant="199" id="bB9-Wy-4H1"/>
+                                        </constraints>
+                                        <state key="normal" image="splash_facebook.jpg">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="facebookLogin:" destination="QVn-jN-cP3" eventType="touchUpInside" id="6Ba-85-IHo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cu-T0-PyT">
+                                        <rect key="frame" x="61" y="70" width="199" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="bCp-A6-Hxg"/>
+                                            <constraint firstAttribute="width" constant="199" id="pNh-SP-0YF"/>
+                                        </constraints>
+                                        <state key="normal" image="splash_email.jpg">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="emailLogin:" destination="QVn-jN-cP3" eventType="touchUpInside" id="C8u-Yb-xYF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="nH6-Qk-GLi" secondAttribute="trailing" constant="60" id="0TT-HW-5fC"/>
+                                    <constraint firstItem="nH6-Qk-GLi" firstAttribute="leading" secondItem="Kfs-xR-a3B" secondAttribute="leading" constant="61" id="DJ8-NJ-Qs7"/>
+                                    <constraint firstItem="8cu-T0-PyT" firstAttribute="top" secondItem="nH6-Qk-GLi" secondAttribute="bottom" constant="8" id="PFp-9f-V0V"/>
+                                    <constraint firstAttribute="width" constant="320" id="W2f-Zo-86J"/>
+                                    <constraint firstItem="nH6-Qk-GLi" firstAttribute="top" secondItem="Kfs-xR-a3B" secondAttribute="top" constant="20" id="XYN-lO-N6v"/>
+                                    <constraint firstAttribute="height" constant="171" id="hZC-T7-pBs"/>
+                                    <constraint firstAttribute="trailing" secondItem="8cu-T0-PyT" secondAttribute="trailing" constant="60" id="jnf-WE-hyM"/>
+                                    <constraint firstItem="8cu-T0-PyT" firstAttribute="leading" secondItem="Kfs-xR-a3B" secondAttribute="leading" constant="61" id="sTv-2l-RyF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9Ye-ZK-bKX" firstAttribute="top" secondItem="Kfs-xR-a3B" secondAttribute="bottom" id="4r3-gv-Tcj"/>
+                            <constraint firstAttribute="trailing" secondItem="DLU-ae-Kx4" secondAttribute="trailing" constant="20" id="Efd-HD-3LH"/>
+                            <constraint firstItem="DLU-ae-Kx4" firstAttribute="leading" secondItem="8iV-vu-tmW" secondAttribute="leading" constant="20" id="J1H-uh-3lC"/>
+                            <constraint firstAttribute="trailing" secondItem="Kfs-xR-a3B" secondAttribute="trailing" id="N0C-AQ-WfS"/>
+                            <constraint firstItem="Kfs-xR-a3B" firstAttribute="leading" secondItem="8iV-vu-tmW" secondAttribute="leading" id="Qmo-rG-hSA"/>
+                            <constraint firstItem="DLU-ae-Kx4" firstAttribute="top" secondItem="4u2-cx-5pF" secondAttribute="bottom" constant="15" id="eyS-Te-dNO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="j30-s3-2Cn"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="afw-AE-vsQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="778" y="-6"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="geX-Ba-e1f">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="1g7-Ie-4HO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3T8-6z-kJE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QVn-jN-cP3" kind="relationship" relationship="rootViewController" id="kUk-Sv-0iH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Ie-Jd-4r6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="374" y="-6"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="splash.jpg" width="1204" height="938"/>
+        <image name="splash_email.jpg" width="199" height="42"/>
+        <image name="splash_facebook.jpg" width="199" height="42"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

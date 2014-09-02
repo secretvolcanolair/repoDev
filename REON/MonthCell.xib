@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MonthCell" id="odc-sF-mzu" customClass="MonthCell">
+            <rect key="frame" x="0.0" y="0.0" width="45" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="45" height="66"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i9X-oi-h17">
+                        <rect key="frame" x="0.0" y="0.0" width="45" height="1"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="dUN-wG-EcT"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qkx-G4-BF5">
+                        <rect key="frame" x="0.0" y="2" width="45" height="64"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lTV-N3-Pma" userLabel="RedCircle">
+                                <rect key="frame" x="8" y="2" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.87450980389999999" green="0.29411764709999999" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KqN-uB-Rln">
+                                <rect key="frame" x="0.0" y="6" width="45" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="r_circle.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="SbF-hE-bQT">
+                                <rect key="frame" x="13" y="36" width="19" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="i9X-oi-h17" firstAttribute="top" secondItem="odc-sF-mzu" secondAttribute="top" id="D1v-rR-Amf"/>
+                <constraint firstItem="i9X-oi-h17" firstAttribute="leading" secondItem="odc-sF-mzu" secondAttribute="leading" id="GVe-Zc-bl3"/>
+                <constraint firstAttribute="trailing" secondItem="i9X-oi-h17" secondAttribute="trailing" id="HwM-Nh-Mit"/>
+            </constraints>
+            <connections>
+                <outlet property="dayLabel" destination="KqN-uB-Rln" id="rl3-mW-hbZ"/>
+                <outlet property="eventIcon" destination="SbF-hE-bQT" id="6lj-FC-pn9"/>
+                <outlet property="redCircle" destination="lTV-N3-Pma" id="LHw-TV-XI5"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="r_circle.jpg" width="19" height="19"/>
+    </resources>
+</document>

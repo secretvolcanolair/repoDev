@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13E28" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="CDCard" representedClassName="CDCard" syncable="YES">
+        <attribute name="cardCompany" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardEmailhome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardEmailother" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardEmailwork" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardFacebook" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardFirstname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardImage" optional="YES" attributeType="Binary" spotlightIndexingEnabled="YES" storedInTruthFile="YES" syncable="YES"/>
+        <attribute name="cardInstagram" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardLabel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardLastname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardLinkedIn" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardPhonecell" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardPhoneother" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardPhonework" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardPrefix" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardSuffix" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardTwitter" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CDFBFriends" syncable="YES"/>
+    <entity name="CDMeets" representedClassName="CDMeets" syncable="YES">
+        <attribute name="addedFromAdressbook" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="cardCompany" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardEmailhome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardEmailother" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardEmailwork" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardFacebook" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardFirstname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardImage" optional="YES" attributeType="Binary" spotlightIndexingEnabled="YES" storedInTruthFile="YES" syncable="YES"/>
+        <attribute name="cardInstagram" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardLabel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardLastname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardLat" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="cardLinkedIn" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardLon" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="cardPhonecell" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardPhoneother" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardPhonework" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardPrefix" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardSuffix" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardTwitter" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateAdded" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="goldStar" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="meet_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="redStar" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="showFacebook" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="showInstagram" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="showLinkedIn" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="showSalesforce" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="showTwitter" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CDCard" positionX="-308" positionY="45" width="128" height="328"/>
+        <element name="CDFBFriends" positionX="-234" positionY="198" width="128" height="45"/>
+        <element name="CDMeets" positionX="-162" positionY="45" width="128" height="525"/>
+    </elements>
+</model>
