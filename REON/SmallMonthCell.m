@@ -9,6 +9,7 @@
 #import "SmallMonthCell.h"
 #import "TeenyDayCell.h"
 #import <ABContactsHelper.h>
+#import "Utils.h"
 
 @implementation SmallMonthCell
 
@@ -19,6 +20,29 @@
 
 @synthesize cellMonth;
 @synthesize cellYear;
+
+@synthesize eventArray;
+
+-(void)checkEvents{
+    
+    eventArray = [[NSMutableArray alloc] init];
+    NSArray *contactsArray = [Utils contactsByYear:(int)cellYear month:(int)cellMonth];
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    
+    [formatter setDateFormat:@"YYYY-MM-dd HH:mm:ss Z"];
+    
+    for(ABContact *contact in contactsArray){
+        
+        NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:[contact creationDate]];
+        
+        if(![eventArray containsObject:[NSNumber numberWithInteger:[components day]]]){
+            [eventArray addObject:[NSNumber numberWithInteger:[components day]]];
+        }
+        
+    }
+    
+}
 
 #pragma mark CollectionView
 
@@ -49,32 +73,18 @@
         [cell performSetup];
     }
     
+    //--- Event Cells
     else if([[NSDate date] timeIntervalSinceDate:cellDate] > 0){
         
-        //--- Check for events
-        for(ABContact *contact in [ABContactsHelper contacts]){
+        for(NSNumber *number in eventArray){
             
-            NSDate *date = [contact creationDate];
-            NSCalendar *gregorian = [NSCalendar currentCalendar];
-            NSDateComponents *dateComponents = [gregorian components:(NSDayCalendarUnit|NSMonthCalendarUnit|NSYearCalendarUnit) fromDate:date];
-            
-            NSInteger monthInteger = [dateComponents month];
-            NSInteger dayInteger = [dateComponents day];
-            NSInteger yearInteger = [dateComponents year];
-            
-            //--- Event day
-            if(monthInteger == cellMonth && dayInteger == (indexPath.row+1) && yearInteger == cellYear){
-                
+            if( (indexPath.row+1) == [number intValue]){
                 cell.isEvent = YES;
                 [cell performSetup];
-                break;
-                
             }
             
         }
         
-    }else{
-        NSLog(@"Not checking for events %@", cellDate);
     }
     
     return cell;

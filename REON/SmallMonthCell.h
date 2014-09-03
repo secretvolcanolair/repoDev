@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SmallMonthCell : UICollectionViewCell<UICollectionViewDataSource, UICollectionViewDelegate>
+@interface SmallMonthCell : UICollectionViewCell<UICollectionViewDataSource, UICollectionViewDelegate>{
+    NSMutableArray *eventArray;
+}
+
 @property (weak, nonatomic) IBOutlet UILabel *monthLabel;
 @property (weak, nonatomic) IBOutlet UIView *calendarStage;
 @property (weak, nonatomic) IBOutlet UICollectionView *dayCollectionView;
@@ -21,5 +24,7 @@
 
 @property NSInteger cellMonth;
 @property NSInteger cellYear;
+
+-(void)checkEvents;
 
 @end

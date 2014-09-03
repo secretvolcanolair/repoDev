@@ -48,6 +48,7 @@
 }
 
 -(void)clearSetup{
+    [dayLabel setTextColor:[UIColor blackColor]];
     [circleView removeFromSuperview];
 }
 

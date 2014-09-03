@@ -59,6 +59,7 @@
         
         cellYear--;
         yearLabel.text = [NSString stringWithFormat:@"%i", cellYear];
+        [_yearlyCollectionView reloadData];
         
     }
     
@@ -100,6 +101,9 @@
     cell.currentDay = currentDay;
     
     [cell.dayCollectionView reloadData];
+    [cell checkEvents];
+    
+    NSLog(@"Check for events... for %i/%i", cellMonth, cellYear);
     
     return cell;
     

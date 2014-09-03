@@ -45,5 +45,10 @@ typedef enum : NSUInteger {
 + (NSDate *)dateWithYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day isEndOfDay: (BOOL)eod;
 + (NSDate *) lastDayOfMonth: (int)month inYear: (int)year;
 + (NSDate *) firstDayOfMonth: (int)month inYear: (int)year;
++ (NSUInteger) daysInMonth: (int)month withYear: (int)year;
+
++(NSArray *) contactsByYear: (int)y month:(int)m day:(int)d;
++(NSArray *) contactsByYear: (int)y month:(int)m;
++(NSArray *) contactsByYear: (int)y;
 
 @end

@@ -570,8 +570,77 @@ static NSString *apiEndpoint = @"http://api.reon.social/index2.php";
     
 }
 
++ (NSUInteger) daysInMonth: (int)month withYear: (int)year{
+    
+    NSDate *curDate = [Utils dateWithYear:year month:month day:1 isEndOfDay:NO];
+    NSCalendar *currentCalendar = [NSCalendar currentCalendar];
+    NSRange daysRange = [currentCalendar rangeOfUnit:NSDayCalendarUnit inUnit:NSMonthCalendarUnit forDate:curDate];
+    
+    return daysRange.length;
+    
+}
+
 + (NSDate *) firstDayOfMonth: (int)month inYear: (int)year{
     return [Utils dateWithYear:year month:month day:1 isEndOfDay:NO];
+}
+
++(NSArray *) contactsByYear: (int)y month:(int)m day:(int)d{
+    
+    //--- Date Range
+    
+    NSString *startDateString = [NSString stringWithFormat:@"%i-%i-%i 00:00:00 +0000", y,m,d];
+    NSString *endDateString = [NSString stringWithFormat:@"%i-%i-%i 23:59:59 +0000", y,m,d];
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"YYYY-MM-dd HH:mm:ss Z"];
+    
+    NSDate *startDate = [formatter dateFromString:startDateString];
+    NSDate *endDate = [formatter dateFromString:endDateString];
+    
+    NSPredicate *contactsByDate = [NSPredicate predicateWithFormat:@"creationDate BETWEEN %@", @[startDate, endDate]];
+    NSArray *contactsArray = [ABContactsHelper contactsMatchingPredicate:contactsByDate];
+    
+    return contactsArray.count > 0 ? contactsArray : Nil;
+    
+}
+
++(NSArray *) contactsByYear: (int)y month:(int)m{
+    
+    //--- Date Range
+    int daysInMonth = (int)[Utils daysInMonth:m withYear:y];
+    NSString *startDateString = [NSString stringWithFormat:@"%i-%i-01 00:00:00 +0000", y,m];
+    NSString *endDateString = [NSString stringWithFormat:@"%i-%i-%i 23:59:59 +0000", y,m,daysInMonth];
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"YYYY-MM-dd HH:mm:ss Z"];
+    
+    NSDate *startDate = [formatter dateFromString:startDateString];
+    NSDate *endDate = [formatter dateFromString:endDateString];
+    
+    NSPredicate *contactsByDate = [NSPredicate predicateWithFormat:@"creationDate BETWEEN %@", @[startDate, endDate]];
+    NSArray *contactsArray = [ABContactsHelper contactsMatchingPredicate:contactsByDate];
+    
+    return contactsArray.count > 0 ? contactsArray : Nil;
+    
+}
+
++(NSArray *) contactsByYear: (int)y;{
+    
+    //--- Date Range
+    NSString *startDateString = [NSString stringWithFormat:@"%i-01-01 00:00:00 +0000", y];
+    NSString *endDateString = [NSString stringWithFormat:@"%i-12-31 23:59:59 +0000", y];
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"YYYY-MM-dd HH:mm:ss Z"];
+    
+    NSDate *startDate = [formatter dateFromString:startDateString];
+    NSDate *endDate = [formatter dateFromString:endDateString];
+    
+    NSPredicate *contactsByDate = [NSPredicate predicateWithFormat:@"creationDate BETWEEN %@", @[startDate, endDate]];
+    NSArray *contactsArray = [ABContactsHelper contactsMatchingPredicate:contactsByDate];
+    
+    return contactsArray.count > 0 ? contactsArray : Nil;
+    
 }
 
 @end
