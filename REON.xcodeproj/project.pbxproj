@@ -65,7 +65,6 @@
 		952C01D919B39B990081523B /* MonthCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 952C01D819B39B990081523B /* MonthCell.xib */; };
 		952C01DC19B39C7B0081523B /* r_circle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 952C01DA19B39C7B0081523B /* r_circle.jpg */; };
 		952C01DD19B39C7B0081523B /* r_circle@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 952C01DB19B39C7B0081523B /* r_circle@2x.jpg */; };
-		952C01E019B4AE460081523B /* CDMeets.m in Sources */ = {isa = PBXBuildFile; fileRef = 952C01DF19B4AE460081523B /* CDMeets.m */; };
 		95401BF019A78A22009A3B83 /* SACalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95401BEF19A78A22009A3B83 /* SACalendarCell.xib */; };
 		95401BFB19A7CFF7009A3B83 /* SmallMonthCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 95401BFA19A7CFF7009A3B83 /* SmallMonthCell.m */; };
 		95401BFE19A7D964009A3B83 /* TeenyDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 95401BFD19A7D964009A3B83 /* TeenyDayCell.m */; };
@@ -162,6 +161,7 @@
 		95C86BF61958AB5A001279B1 /* contact-card-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 95C86BF01958AB5A001279B1 /* contact-card-yellow.png */; };
 		95C86BF71958AB5A001279B1 /* contact-card-yellow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95C86BF11958AB5A001279B1 /* contact-card-yellow@2x.png */; };
 		95CACAF119AF9A1000166A51 /* WhenSearchMonthView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95CACAF019AF9A1000166A51 /* WhenSearchMonthView.m */; };
+		95E5169819B7470C0091F91E /* CDMeets.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E5169719B7470C0091F91E /* CDMeets.m */; };
 		95F0618D19759BC6009B719D /* pendingRequestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F0618C19759BC6009B719D /* pendingRequestCell.m */; };
 		95F0619019759C6A009B719D /* pendingRequests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F0618F19759C6A009B719D /* pendingRequests.m */; };
 		95F3C521198827BE0060F6BB /* SocialCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F3C520198827BE0060F6BB /* SocialCell.m */; };
@@ -253,8 +253,6 @@
 		952C01D819B39B990081523B /* MonthCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MonthCell.xib; sourceTree = "<group>"; };
 		952C01DA19B39C7B0081523B /* r_circle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = r_circle.jpg; sourceTree = "<group>"; };
 		952C01DB19B39C7B0081523B /* r_circle@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "r_circle@2x.jpg"; sourceTree = "<group>"; };
-		952C01DE19B4AE460081523B /* CDMeets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDMeets.h; sourceTree = "<group>"; };
-		952C01DF19B4AE460081523B /* CDMeets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDMeets.m; sourceTree = "<group>"; };
 		95401BEF19A78A22009A3B83 /* SACalendarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SACalendarCell.xib; sourceTree = "<group>"; };
 		95401BF919A7CFF7009A3B83 /* SmallMonthCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmallMonthCell.h; sourceTree = "<group>"; };
 		95401BFA19A7CFF7009A3B83 /* SmallMonthCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmallMonthCell.m; sourceTree = "<group>"; };
@@ -375,6 +373,8 @@
 		95C86BF11958AB5A001279B1 /* contact-card-yellow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contact-card-yellow@2x.png"; sourceTree = "<group>"; };
 		95CACAEF19AF9A1000166A51 /* WhenSearchMonthView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhenSearchMonthView.h; sourceTree = "<group>"; };
 		95CACAF019AF9A1000166A51 /* WhenSearchMonthView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhenSearchMonthView.m; sourceTree = "<group>"; };
+		95E5169619B7470C0091F91E /* CDMeets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDMeets.h; sourceTree = "<group>"; };
+		95E5169719B7470C0091F91E /* CDMeets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDMeets.m; sourceTree = "<group>"; };
 		95F0618B19759BC6009B719D /* pendingRequestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pendingRequestCell.h; sourceTree = "<group>"; };
 		95F0618C19759BC6009B719D /* pendingRequestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pendingRequestCell.m; sourceTree = "<group>"; };
 		95F0618E19759C6A009B719D /* pendingRequests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pendingRequests.h; sourceTree = "<group>"; };
@@ -582,9 +582,9 @@
 		95A2B4361959FD4100EB2642 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				952C01DE19B4AE460081523B /* CDMeets.h */,
-				952C01DF19B4AE460081523B /* CDMeets.m */,
 				95C499A51958760100478987 /* REON.xcdatamodeld */,
+				95E5169619B7470C0091F91E /* CDMeets.h */,
+				95E5169719B7470C0091F91E /* CDMeets.m */,
 				9521F13D197D96EB001A078C /* CDCard.h */,
 				9521F13E197D96EB001A078C /* CDCard.m */,
 			);
@@ -1064,7 +1064,7 @@
 				952C01D719B39B840081523B /* MonthCell.m in Sources */,
 				954731FD198A82F800F7330B /* MyContacts.m in Sources */,
 				9563825F1987DAF500247693 /* PhoneCell.m in Sources */,
-				952C01E019B4AE460081523B /* CDMeets.m in Sources */,
+				95E5169819B7470C0091F91E /* CDMeets.m in Sources */,
 				95C499E61958847A00478987 /* Card.m in Sources */,
 				950E047F199F9A8800250B29 /* WhenSearch.m in Sources */,
 				95CACAF119AF9A1000166A51 /* WhenSearchMonthView.m in Sources */,

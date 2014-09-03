@@ -88,7 +88,7 @@
             NSInteger yearInteger = [dateComponents year];
             
             //--- Event day
-            if(monthInteger == _month && dayInteger == (indexPath.row+1) && yearInteger == _year){
+            if(monthInteger == _month && dayInteger == (indexPath.row+1)-totalBlankDays && yearInteger == _year){
                 [cell setAsEventDay];
                 break;
             }else{

@@ -38,6 +38,11 @@
     [formatter setDateFormat:@"MM/dd/yyyy"];
     NSDate *cellDate = [formatter dateFromString:dateString];
     
+    cell.isToday = NO;
+    cell.isEvent = NO;
+    
+    [cell clearSetup];
+    
     //--- Today's Cell
     if(currentMonth == cellMonth && (indexPath.row+1) == currentDay && currentYear == cellYear){
         cell.isToday = YES;

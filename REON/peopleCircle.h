@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface peopleCircle : UICollectionViewCell
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @end

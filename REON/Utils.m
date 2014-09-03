@@ -184,8 +184,9 @@ static NSString *apiEndpoint = @"http://api.reon.social/index2.php";
 +(void) queryMemberInfo: (NSArray *)memberIDArray withCallback: (void(^)(NSDictionary *queryObject))callback{
     
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
-    params[@"type"] = @"3";
+    params[@"type"] = @"queryMemberInfo";
     params[@"memberids"] = memberIDArray;
+    params[@"memberid"] = [Utils currentMember];
     
     [self apiPOSTWithDictionary:params withCallback:^(BOOL success, NSDictionary *object) {
         
@@ -429,11 +430,6 @@ static NSString *apiEndpoint = @"http://api.reon.social/index2.php";
         callback(NO, Nil);
         
         NSLog(@"\n\nFailure Response Body for type: %@: %@", [postObject valueForKey:@"type"], operation.responseString);
-        
-        //--- Show alert
-//        UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"HTTP Error" message:error.localizedDescription delegate:Nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
-//        
-//        [errorAlert show];
         
     }];
     

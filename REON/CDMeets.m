@@ -2,7 +2,7 @@
 //  CDMeets.m
 //  REON
 //
-//  Created by Robert Kehoe on 9/1/14.
+//  Created by Robert Kehoe on 9/3/14.
 //  Copyright (c) 2014 OWWS. All rights reserved.
 //
 
@@ -11,6 +11,7 @@
 
 @implementation CDMeets
 
+@dynamic addedFromAdressbook;
 @dynamic cardCompany;
 @dynamic cardEmailhome;
 @dynamic cardEmailother;
@@ -42,6 +43,6 @@
 @dynamic showSalesforce;
 @dynamic showTwitter;
 @dynamic status;
-@dynamic addedFromAdressbook;
+@dynamic cardMemberId;
 
 @end

@@ -41,6 +41,26 @@
     currentYearString = [formatter stringFromDate:[NSDate date]];
     yearLabel.text = currentYearString;
     currentYear = [currentYearString intValue];
+    cellYear = currentYear;
+    
+}
+
+- (IBAction)swipeGesture:(UISwipeGestureRecognizer *)sender {
+    
+    if(sender.direction == UISwipeGestureRecognizerDirectionLeft){
+        
+        cellYear++;
+        yearLabel.text = [NSString stringWithFormat:@"%i", cellYear];
+        [_yearlyCollectionView reloadData];
+        
+    }
+    
+    else if(sender.direction == UISwipeGestureRecognizerDirectionRight){
+        
+        cellYear--;
+        yearLabel.text = [NSString stringWithFormat:@"%i", cellYear];
+        
+    }
     
 }
 
@@ -52,7 +72,7 @@
     
     WhenSearchMonthView *monthView = (WhenSearchMonthView *)segue.destinationViewController;
     monthView.thisMonth = (int)(indexPath.row + 1);
-    monthView.thisYear = currentYear;
+    monthView.thisYear = cellYear;
     
 }
 
@@ -73,11 +93,13 @@
     cell.daysInMonth = daysInMonth;
     
     cell.cellMonth = cellMonth;
-    cell.cellYear = currentYear;
+    cell.cellYear = cellYear;
     
     cell.currentMonth = currentMonth;
     cell.currentYear = currentYear;
     cell.currentDay = currentDay;
+    
+    [cell.dayCollectionView reloadData];
     
     return cell;
     

@@ -2,7 +2,7 @@
 //  CDMeets.h
 //  REON
 //
-//  Created by Robert Kehoe on 9/1/14.
+//  Created by Robert Kehoe on 9/3/14.
 //  Copyright (c) 2014 OWWS. All rights reserved.
 //
 
@@ -12,6 +12,7 @@
 
 @interface CDMeets : NSManagedObject
 
+@property (nonatomic, retain) NSNumber * addedFromAdressbook;
 @property (nonatomic, retain) NSString * cardCompany;
 @property (nonatomic, retain) NSString * cardEmailhome;
 @property (nonatomic, retain) NSString * cardEmailother;
@@ -43,6 +44,6 @@
 @property (nonatomic, retain) NSNumber * showSalesforce;
 @property (nonatomic, retain) NSNumber * showTwitter;
 @property (nonatomic, retain) NSString * status;
-@property (nonatomic, retain) NSNumber * addedFromAdressbook;
+@property (nonatomic, retain) NSNumber * cardMemberId;
 
 @end

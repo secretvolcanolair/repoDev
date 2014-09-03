@@ -15,8 +15,10 @@
     int currentYear;
     int currentDay;
     int currentMonth;
+    int cellYear;
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *yearLabel;
+@property (weak, nonatomic) IBOutlet UICollectionView *yearlyCollectionView;
 
 @end

@@ -98,6 +98,27 @@
     
 }
 
+//-(void) getAllMeetObjects{
+//    
+//    allMeetObjects = [[NSMutableArray alloc] init];
+//    
+//    //--- Build Request
+//    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+//    NSEntityDescription *meetObjects = [NSEntityDescription entityForName:@"CDMeets" inManagedObjectContext:managedObjectContext];
+//    [request setEntity:meetObjects];
+//    
+//    NSArray *meetObjectsArray = [managedObjectContext executeFetchRequest:request error:Nil];
+//    
+//    for(CDMeets *meetObject in meetObjectsArray){
+//        if([meetObject cardID]){
+//            [allMeetObjects addObject:[meetObject cardID]];
+//        }
+//    }
+//    
+//    NSLog(@"Meet Objects: %@", allMeetObjects);
+//    
+//}
+
 //--- Edit card actions
 -(void) editCardAction: (UITapGestureRecognizer *)gesture{
     Card *cardObject = (Card *)[gesture view];
@@ -274,6 +295,10 @@
                 [pendingMeet setDateAdded:[NSDate date]];
                 [pendingMeet setStatus:@"1"];
                 [pendingMeet setCardID:[object valueForKey:@"id"]];
+                [pendingMeet setCardMemberId:[NSNumber numberWithInt:[[object valueForKey:@"fromMemberId"] intValue]]];
+                
+                #warning TEST THIS MAKE SURE WORKS
+                NSLog(@"Downloading CDMeet object with member ID %@", [NSNumber numberWithInt:[[object valueForKey:@"fromMemberId"] intValue]]);
                 
                 //--- Save Lat/Lon Coords
                 NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
@@ -475,35 +500,33 @@
 #pragma mark CollectionView Delegate
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    
     NSUInteger total = [peopleArray count];
-    
-//    if(total == 0){
-//    
-//        total = 6;
-//    
-//    }else if([peopleArray count] < 6){
-//        
-//        total = [peopleArray count] + 6%[peopleArray count];
-//        
-//    }
-//    
-//    NSLog(@"Total %lu", (unsigned long)total);
-    
     return total;
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+
+    //--- First get object returned
+    NSLog(@"Peiple array %@", peopleArray);
     
-    peopleCircle *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
+    NSDictionary *peopleObject = [peopleArray objectAtIndex:indexPath.row];
+    peopleCircle *cell;
     
-    if(!cell){
-        cell = [[peopleCircle alloc] init];
+    //--- If the object comes back with a name (have connected with them before)
+    if([[peopleObject valueForKey:@"name"] length] > 0){
+        
+        cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"KnowCell" forIndexPath:indexPath];
+        [cell.imageView setImageWithURL:[NSURL URLWithString:[peopleObject valueForKey:@"image"]]];
+        [cell.nameLabel setText:[peopleObject valueForKey:@"name"]];
+        
     }
     
-    if(indexPath.row < peopleArray.count){
-        NSDictionary *peopleObject = [peopleArray objectAtIndex:indexPath.row];
+    //--- No name (don't know)
+    else{
+        
+        cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
         [cell.imageView setImageWithURL:[NSURL URLWithString:[peopleObject valueForKey:@"image"]]];
+        
     }
     
     return cell;
@@ -529,7 +552,9 @@
         int major = [[NSString stringWithFormat:@"%@", beacon.major] intValue];
         int minor = [[NSString stringWithFormat:@"%@", beacon.minor] intValue];
         
-        [beaconMutableArray addObject:[broadcast decodeForUserIdWithMajor:major andMinor:minor]];
+        NSNumber *memberId = [broadcast decodeForUserIdWithMajor:major andMinor:minor];
+        
+        [beaconMutableArray addObject:memberId];
         
     }
     

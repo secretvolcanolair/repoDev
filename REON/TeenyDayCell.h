@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TeenyDayCell : UICollectionViewCell
+@interface TeenyDayCell : UICollectionViewCell{
+    UIView *circleView;
+}
+
 @property (weak, nonatomic) IBOutlet UILabel *dayLabel;
 @property BOOL isToday;
 @property BOOL isEvent;
 - (void)performSetup;
+- (void)clearSetup;
 @end
