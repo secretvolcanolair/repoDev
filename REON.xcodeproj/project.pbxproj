@@ -17,6 +17,7 @@
 		4E36C43F1991384100C6E049 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E36C43E1991384100C6E049 /* MapKit.framework */; };
 		4E36C442199138CD00C6E049 /* WhereSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E36C441199138CD00C6E049 /* WhereSearch.m */; };
 		4E36C4451991614100C6E049 /* MapPin.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E36C4441991614100C6E049 /* MapPin.m */; };
+		4EE6353019C8160100C32DF4 /* ReonSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE6352F19C8160100C32DF4 /* ReonSettings.m */; };
 		950E0479199F99DC00250B29 /* DateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 950E0470199F99DC00250B29 /* DateUtil.m */; };
 		950E047A199F99DC00250B29 /* DMLazyScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 950E0473199F99DC00250B29 /* DMLazyScrollView.m */; };
 		950E047B199F99DC00250B29 /* SACalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 950E0475199F99DC00250B29 /* SACalendar.m */; };
@@ -190,6 +191,8 @@
 		4E36C441199138CD00C6E049 /* WhereSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhereSearch.m; sourceTree = "<group>"; };
 		4E36C4431991614100C6E049 /* MapPin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPin.h; sourceTree = "<group>"; };
 		4E36C4441991614100C6E049 /* MapPin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPin.m; sourceTree = "<group>"; };
+		4EE6352E19C8160100C32DF4 /* ReonSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReonSettings.h; sourceTree = "<group>"; };
+		4EE6352F19C8160100C32DF4 /* ReonSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReonSettings.m; sourceTree = "<group>"; };
 		86AB921BEB19492DBBEA90FB /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		950E046F199F99DC00250B29 /* DateUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateUtil.h; sourceTree = "<group>"; };
 		950E0470199F99DC00250B29 /* DateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateUtil.m; sourceTree = "<group>"; };
@@ -656,6 +659,8 @@
 				95C499A21958760100478987 /* AppDelegate.h */,
 				95C499A31958760100478987 /* AppDelegate.m */,
 				95C499C61958762400478987 /* General.storyboard */,
+				4EE6352E19C8160100C32DF4 /* ReonSettings.h */,
+				4EE6352F19C8160100C32DF4 /* ReonSettings.m */,
 				4E36C4431991614100C6E049 /* MapPin.h */,
 				4E36C4441991614100C6E049 /* MapPin.m */,
 				4E36C440199138CD00C6E049 /* WhereSearch.h */,
@@ -1069,6 +1074,7 @@
 				950E047F199F9A8800250B29 /* WhenSearch.m in Sources */,
 				95CACAF119AF9A1000166A51 /* WhenSearchMonthView.m in Sources */,
 				951FCA4019993EFE0078BA52 /* Splash.m in Sources */,
+				4EE6353019C8160100C32DF4 /* ReonSettings.m in Sources */,
 				954E9B721982D49E00F4F29F /* Login.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
