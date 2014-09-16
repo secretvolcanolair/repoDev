@@ -13,6 +13,7 @@
         <attribute name="cardLabel" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="cardLastname" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="cardLinkedIn" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardNotes" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="cardPhonecell" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="cardPhoneother" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="cardPhonework" optional="YES" attributeType="String" syncable="YES"/>
@@ -58,7 +59,7 @@
         <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="CDCard" positionX="-308" positionY="45" width="128" height="328"/>
+        <element name="CDCard" positionX="-308" positionY="45" width="128" height="345"/>
         <element name="CDFBFriends" positionX="-234" positionY="198" width="128" height="45"/>
         <element name="CDMeets" positionX="-162" positionY="45" width="128" height="540"/>
     </elements>

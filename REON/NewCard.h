@@ -32,6 +32,10 @@
 @property (weak, nonatomic) IBOutlet UITextField *cardTwitterField;
 @property (weak, nonatomic) IBOutlet UITextField *cardInstagramField;
 
+//--- Notes field
+@property (weak, nonatomic) IBOutlet UITextView *cardNotes;
+
+
 @property (strong, nonatomic) CDCard *cardObject;
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *addButton;

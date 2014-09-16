@@ -279,7 +279,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ey2-Qe-XWv">
                                             <rect key="frame" x="270" y="18" width="30" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" image="icon_comments.png">
+                                            <state key="normal" image="icon_email.jpg">
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                             <connections>
@@ -334,6 +334,7 @@
     </scenes>
     <resources>
         <image name="icon_comments.png" width="30" height="30"/>
+        <image name="icon_email.jpg" width="21" height="14"/>
         <image name="icon_phone.png" width="30" height="30"/>
         <image name="meet_placeholder.jpg" width="150" height="150"/>
         <image name="salesforce_logo.jpg" width="51" height="36"/>

@@ -37,6 +37,9 @@
 @synthesize cardTwitterField;
 @synthesize cardInstagramField;
 
+//--- Card notes
+@synthesize cardNotes;
+
 @synthesize addButton;
 @synthesize cardObject;
 
@@ -142,6 +145,8 @@
         [cards setCardFacebook:cardFacebookField.text];
         [cards setCardTwitter:cardTwitterField.text];
         [cards setCardInstagram:cardInstagramField.text];
+        
+        //--- Card notes
         
         [managedObjectContent save:Nil];
         

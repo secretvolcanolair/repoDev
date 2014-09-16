@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "838B467465E848D7B3214685"
-               BuildableName = "ResourceBundle.bundle"
-               BlueprintName = "ResourceBundle"
+               BlueprintIdentifier = "ABD85A6EE8BB4BFBA2835758"
+               BuildableName = "libPods-Bolts.a"
+               BlueprintName = "Pods-Bolts"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

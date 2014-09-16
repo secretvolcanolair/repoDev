@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "838B467465E848D7B3214685"
-               BuildableName = "ResourceBundle.bundle"
-               BlueprintName = "ResourceBundle"
+               BlueprintIdentifier = "EA5CC941982B4389B2D26EDE"
+               BuildableName = "libPods-CalendarIOS7.a"
+               BlueprintName = "Pods-CalendarIOS7"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

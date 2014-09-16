@@ -118,6 +118,10 @@
         alertMessage = @"Please choose a password";
     }
     
+    else if (profileImageView.image == nil){
+        alertMessage = @"Please choose an image";
+    }
+    
     //--- Display errors or continue
     if(alertMessage){
         
