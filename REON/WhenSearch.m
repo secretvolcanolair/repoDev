@@ -10,6 +10,7 @@
 #import "Utils.h"
 #import "SmallMonthCell.h"
 #import "WhenSearchMonthView.h"
+#import <ABContactsHelper.h>
 
 @interface WhenSearch ()
 
@@ -18,6 +19,7 @@
 @implementation WhenSearch
 
 @synthesize yearLabel;
+@synthesize eventDictionary;
 
 - (void)viewDidLoad{
     
@@ -43,6 +45,9 @@
     currentYear = [currentYearString intValue];
     cellYear = currentYear;
     
+    eventDictionary = [[NSMutableDictionary alloc] init];
+    [self loadEvents];
+    
 }
 
 - (IBAction)swipeGesture:(UISwipeGestureRecognizer *)sender {
@@ -51,6 +56,7 @@
         
         cellYear++;
         yearLabel.text = [NSString stringWithFormat:@"%i", cellYear];
+        [self loadEvents];
         [_yearlyCollectionView reloadData];
         
     }
@@ -59,6 +65,7 @@
         
         cellYear--;
         yearLabel.text = [NSString stringWithFormat:@"%i", cellYear];
+        [self loadEvents];
         [_yearlyCollectionView reloadData];
         
     }
@@ -78,6 +85,30 @@
 }
 
 #pragma mark CollectionView
+
+-(void)loadEvents{
+    
+    NSLog(@"Year stuff? %i", currentYear);
+    
+    NSArray *contactsArray = [Utils contactsByYear:cellYear];
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    
+    [formatter setDateFormat:@"YYYY-MM-dd HH:mm:ss Z"];
+    
+    for(ABContact *contact in contactsArray){
+        
+        NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:[contact creationDate]];
+        
+        NSString *objectKey = [NSString stringWithFormat:@"%@%@%@", [NSNumber numberWithInteger:[components month]], [NSNumber numberWithInteger:[components day]], [NSNumber numberWithInteger:[components year]]];
+        
+        [eventDictionary setObject:@"1" forKey:objectKey];
+        
+    }
+    
+    NSLog(@"Dict: %@", eventDictionary);
+    
+}
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     return 12;
@@ -99,9 +130,9 @@
     cell.currentMonth = currentMonth;
     cell.currentYear = currentYear;
     cell.currentDay = currentDay;
+    cell.eventDictionary = eventDictionary;
     
     [cell.dayCollectionView reloadData];
-    [cell checkEvents];
     
     NSLog(@"Check for events... for %i/%i", cellMonth, cellYear);
     

@@ -15,7 +15,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *monthLabel;
 @property (weak, nonatomic) IBOutlet UIView *calendarStage;
 @property (weak, nonatomic) IBOutlet UICollectionView *dayCollectionView;
-@property (strong, nonatomic) NSArray *eventArray;
+@property (strong, nonatomic) NSMutableDictionary *eventDictionary;
 @property NSUInteger daysInMonth;
 
 @property NSInteger currentMonth;
@@ -24,7 +24,5 @@
 
 @property NSInteger cellMonth;
 @property NSInteger cellYear;
-
--(void)checkEvents;
 
 @end

@@ -20,5 +20,6 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *yearLabel;
 @property (weak, nonatomic) IBOutlet UICollectionView *yearlyCollectionView;
+@property (strong, nonatomic) NSMutableDictionary *eventDictionary;
 
 @end

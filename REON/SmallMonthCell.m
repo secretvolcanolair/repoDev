@@ -8,7 +8,6 @@
 
 #import "SmallMonthCell.h"
 #import "TeenyDayCell.h"
-#import <ABContactsHelper.h>
 #import "Utils.h"
 
 @implementation SmallMonthCell
@@ -21,28 +20,8 @@
 @synthesize cellMonth;
 @synthesize cellYear;
 
-@synthesize eventArray;
+@synthesize eventDictionary;
 
--(void)checkEvents{
-    
-    eventArray = [[NSMutableArray alloc] init];
-    NSArray *contactsArray = [Utils contactsByYear:(int)cellYear month:(int)cellMonth];
-    
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    
-    [formatter setDateFormat:@"YYYY-MM-dd HH:mm:ss Z"];
-    
-    for(ABContact *contact in contactsArray){
-        
-        NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:[contact creationDate]];
-        
-        if(![eventArray containsObject:[NSNumber numberWithInteger:[components day]]]){
-            [eventArray addObject:[NSNumber numberWithInteger:[components day]]];
-        }
-        
-    }
-    
-}
 
 #pragma mark CollectionView
 
@@ -56,12 +35,6 @@
     TeenyDayCell *cell = (TeenyDayCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"dayCell" forIndexPath:indexPath];
     cell.dayLabel.text = [NSString stringWithFormat:@"%i", (int)(indexPath.row+1)];
     
-    //--- Not Today's Cell
-    NSString *dateString = [NSString stringWithFormat:@"%li/%li/%li", cellMonth, (indexPath.row+1), cellYear];
-    NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
-    [formatter setDateFormat:@"MM/dd/yyyy"];
-    NSDate *cellDate = [formatter dateFromString:dateString];
-    
     cell.isToday = NO;
     cell.isEvent = NO;
     
@@ -74,15 +47,13 @@
     }
     
     //--- Event Cells
-    else if([[NSDate date] timeIntervalSinceDate:cellDate] > 0){
+    else if(cellYear <= currentYear && cellMonth <= currentMonth){
         
-        for(NSNumber *number in eventArray){
-            
-            if( (indexPath.row+1) == [number intValue]){
-                cell.isEvent = YES;
-                [cell performSetup];
-            }
-            
+        NSString *keyString = [NSString stringWithFormat:@"%li%li%li", cellMonth, (indexPath.row+1), cellYear];
+        
+        if([eventDictionary objectForKey:keyString]){
+            cell.isEvent = YES;
+            [cell performSetup];
         }
         
     }
