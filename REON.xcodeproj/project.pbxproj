@@ -17,7 +17,7 @@
 		4E36C43F1991384100C6E049 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E36C43E1991384100C6E049 /* MapKit.framework */; };
 		4E36C442199138CD00C6E049 /* WhereSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E36C441199138CD00C6E049 /* WhereSearch.m */; };
 		4E36C4451991614100C6E049 /* MapPin.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E36C4441991614100C6E049 /* MapPin.m */; };
-		4E49149D19CA329900C15521 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E49149C19CA329900C15521 /* MobileCoreServices.framework */; };
+		4E4914A019CA999B00C15521 /* RWTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E49149F19CA999B00C15521 /* RWTAppDelegate.m */; };
 		4EE6353019C8160100C32DF4 /* ReonSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE6352F19C8160100C32DF4 /* ReonSettings.m */; };
 		950E0479199F99DC00250B29 /* DateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 950E0470199F99DC00250B29 /* DateUtil.m */; };
 		950E047A199F99DC00250B29 /* DMLazyScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 950E0473199F99DC00250B29 /* DMLazyScrollView.m */; };
@@ -193,6 +193,8 @@
 		4E36C4431991614100C6E049 /* MapPin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPin.h; sourceTree = "<group>"; };
 		4E36C4441991614100C6E049 /* MapPin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPin.m; sourceTree = "<group>"; };
 		4E49149C19CA329900C15521 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		4E49149E19CA999B00C15521 /* RWTAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTAppDelegate.h; sourceTree = "<group>"; };
+		4E49149F19CA999B00C15521 /* RWTAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTAppDelegate.m; sourceTree = "<group>"; };
 		4EE6352E19C8160100C32DF4 /* ReonSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReonSettings.h; sourceTree = "<group>"; };
 		4EE6352F19C8160100C32DF4 /* ReonSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReonSettings.m; sourceTree = "<group>"; };
 		86AB921BEB19492DBBEA90FB /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
@@ -393,7 +395,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E49149D19CA329900C15521 /* MobileCoreServices.framework in Frameworks */,
 				95638267198807A200247693 /* MessageUI.framework in Frameworks */,
 				952AD5BF1986B89700A04F7C /* QuartzCore.framework in Frameworks */,
 				4E36C43F1991384100C6E049 /* MapKit.framework in Frameworks */,
@@ -666,6 +667,8 @@
 				4EE6352E19C8160100C32DF4 /* ReonSettings.h */,
 				4EE6352F19C8160100C32DF4 /* ReonSettings.m */,
 				4E36C4431991614100C6E049 /* MapPin.h */,
+				4E49149E19CA999B00C15521 /* RWTAppDelegate.h */,
+				4E49149F19CA999B00C15521 /* RWTAppDelegate.m */,
 				4E36C4441991614100C6E049 /* MapPin.m */,
 				4E36C440199138CD00C6E049 /* WhereSearch.h */,
 				4E36C441199138CD00C6E049 /* WhereSearch.m */,
@@ -1058,6 +1061,7 @@
 				95F0619019759C6A009B719D /* pendingRequests.m in Sources */,
 				950E047C199F99DC00250B29 /* SACalendarCell.m in Sources */,
 				95F0618D19759BC6009B719D /* pendingRequestCell.m in Sources */,
+				4E4914A019CA999B00C15521 /* RWTAppDelegate.m in Sources */,
 				956382591987DADD00247693 /* IdentityCell.m in Sources */,
 				95A2B4351959F82A00EB2642 /* NewCard.m in Sources */,
 				9521F13F197D96EB001A078C /* CDCard.m in Sources */,
