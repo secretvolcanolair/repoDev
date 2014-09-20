@@ -53,6 +53,8 @@ static int keyLimit = 20000;
     
     [self.peripheralManager startAdvertising:self.beaconPeripheralData];
     
+    NSLog(@"Yes, were broadcasting?");
+    
 }
 
 -(void)stopBroadcasting{

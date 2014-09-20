@@ -202,6 +202,25 @@
     //--- Attach an event to the pending requests view container
     [pendingRequestsView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pendingRequestsTapped)]];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(stopListening) name:@"stopListening" object:Nil];
+    
+}
+
+-(void)stopListening{
+    
+    NSLog(@"Shut down, start listening ONLY");
+    
+    //--- Stop listening
+    // [self.locationManager stopMonitoringForRegion:self.myBeaconRegion];
+    [self.locationManager stopRangingBeaconsInRegion:self.myBeaconRegion];
+    
+//    //--- Construct Broadcast object
+//    if(!brodcastMe){
+//        brodcastMe = [[broadcast alloc] initWithUserIDString:[Utils currentMember]];
+//    }
+//    
+//    [brodcastMe startBroadcasting];
+    
 }
 
 //--- Recently Met Has Been Tapped
@@ -250,12 +269,31 @@
     
 }
 
+-(void) pendingLabel{
+    
+    //--- @ToDO Probably want to base this on when the CoreData changes
+    //---- Polling requests like this sucks and it's not realtime
+    
+    //--- Check for the pending meet before adding it so we don't get duplicates
+    NSFetchRequest *fetchCurrentPending = [NSFetchRequest fetchRequestWithEntityName:@"CDMeets"];
+    [fetchCurrentPending setPredicate:[NSPredicate predicateWithFormat:@"status = 1 OR status = 0"]];
+    
+    NSArray *pendingFetchedArray = [managedObjectContext executeFetchRequest:fetchCurrentPending error:Nil];
+    
+    [pendingRequestsLabel setText:[NSString stringWithFormat:@"%lu", (unsigned long)[pendingFetchedArray count]]];
+    
+}
+
 -(void) checkPendingShares{
+    
+    NSLog(@"Check pending shares...");
+    
+    //--- Update pending label
+    [self pendingLabel];
     
     [Utils checkPendingShares:^(NSMutableDictionary *object, int totalPendingShares, NSArray *pendingSharesObject) {
         
-        //--- Set the pending requests
-        [pendingRequestsLabel setText:[NSString stringWithFormat:@"%i", totalPendingShares]];
+        NSLog(@"Total pending %d", totalPendingShares);
         
         //--- Save the pending meets to CoreData, so we can work with them in the UITableViewController
         bool doSave = NO;
@@ -384,7 +422,7 @@
 -(void) broadcastMe{
     
     //--- Stop listening
-    [self.locationManager stopMonitoringForRegion:self.myBeaconRegion];
+    //[self.locationManager stopMonitoringForRegion:self.myBeaconRegion];
     [self.locationManager stopRangingBeaconsInRegion:self.myBeaconRegion];
     
     //--- Construct Broadcast object

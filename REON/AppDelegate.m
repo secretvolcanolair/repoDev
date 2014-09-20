@@ -16,13 +16,45 @@
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
 //--- Application did finish launching.
+-(void)applicationDidEnterBackground:(UIApplication *)application{
+    NSLog(@"App closed... fire off notification");
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"stopListening" object:Nil];
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
     
     [AppDelegate determineRootViewController];
     
+    //--- Keep track of iBeacon region
+    self.locationManager = [[CLLocationManager alloc] init];
+    self.locationManager.delegate = self;
+    
+    if(_broadcast){
+        [_broadcast stopBroadcasting];
+        _broadcast = Nil;
+    }
+    
     return YES;
 
 }
+
+#pragma mark CoreLocation
+
+-(void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region{
+    
+    NSLog(@"Init with user id: %@", [Utils currentMember]);
+    
+    //--- Bluetooth: Setup beacon region
+    
+    if(!_broadcast){
+        _broadcast = [[broadcast alloc] initWithUserIDString:[Utils currentMember]];
+    }
+    
+    [_broadcast startBroadcasting];
+
+}
+
+#pragma mark Facebook
 
 //--- Facebook
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
@@ -35,6 +67,7 @@
     
     //--- Member Logged In
     if([Utils currentMember]){
+        NSLog(@"Init with user id: %@", [Utils currentMember]);
         UINavigationController *generalNavigationController = [[UIStoryboard storyboardWithName:@"General" bundle:Nil] instantiateInitialViewController];
         rootWindow.rootViewController = generalNavigationController;
         [rootWindow makeKeyAndVisible];

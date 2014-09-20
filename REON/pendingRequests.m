@@ -135,16 +135,8 @@
 #pragma mark MeetActionDelegate
 
 -(void)meetConfirmationDidCompleteWithObject:(CDMeets *)meetObject andAction:(meetAction)action{
-    
-    //--- Update the meet request and obtain the card information so we can save it
     [meetConfirmationView dismissViewControllerAnimated:YES completion:Nil];
-    
-    if([[meetObject status] isEqualToString:@"0"] == NO){
-        [Utils changeNotificationStatus:meetObject withStatus:action withCallback:Nil];
-    }else{
-        NSLog(@"Not saving the status because no need to...");
-    }
-    
+    [Utils changeNotificationStatus:meetObject withStatus:action withCallback:Nil];
 }
 
 #pragma mark NSFetchResultsControllerDelegate
