@@ -14,6 +14,9 @@
 		4E226AFA198ABDDF00F78043 /* searchbyheader.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E226AF4198ABDDF00F78043 /* searchbyheader.png */; };
 		4E226AFB198ABDDF00F78043 /* whenicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E226AF5198ABDDF00F78043 /* whenicon.png */; };
 		4E226AFC198ABDDF00F78043 /* whereicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E226AF6198ABDDF00F78043 /* whereicon.png */; };
+		4E2DA3EB19DA63EB00F86F03 /* add_contact.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E2DA3EA19DA63EB00F86F03 /* add_contact.png */; };
+		4E2DA3EE19DA650400F86F03 /* setting_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E2DA3EC19DA650400F86F03 /* setting_btn.png */; };
+		4E2DA3EF19DA650400F86F03 /* setting_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E2DA3ED19DA650400F86F03 /* setting_btn@2x.png */; };
 		4E36C43F1991384100C6E049 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E36C43E1991384100C6E049 /* MapKit.framework */; };
 		4E36C442199138CD00C6E049 /* WhereSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E36C441199138CD00C6E049 /* WhereSearch.m */; };
 		4E36C4451991614100C6E049 /* MapPin.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E36C4441991614100C6E049 /* MapPin.m */; };
@@ -186,6 +189,9 @@
 		4E226AF4198ABDDF00F78043 /* searchbyheader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchbyheader.png; sourceTree = "<group>"; };
 		4E226AF5198ABDDF00F78043 /* whenicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whenicon.png; sourceTree = "<group>"; };
 		4E226AF6198ABDDF00F78043 /* whereicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whereicon.png; sourceTree = "<group>"; };
+		4E2DA3EA19DA63EB00F86F03 /* add_contact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_contact.png; sourceTree = "<group>"; };
+		4E2DA3EC19DA650400F86F03 /* setting_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting_btn.png; sourceTree = "<group>"; };
+		4E2DA3ED19DA650400F86F03 /* setting_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting_btn@2x.png"; sourceTree = "<group>"; };
 		4E36C43E1991384100C6E049 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		4E36C440199138CD00C6E049 /* WhereSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhereSearch.h; sourceTree = "<group>"; };
 		4E36C441199138CD00C6E049 /* WhereSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhereSearch.m; sourceTree = "<group>"; };
@@ -727,6 +733,9 @@
 		95C499C819587F8700478987 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				4E2DA3EC19DA650400F86F03 /* setting_btn.png */,
+				4E2DA3ED19DA650400F86F03 /* setting_btn@2x.png */,
+				4E2DA3EA19DA63EB00F86F03 /* add_contact.png */,
 				956121BE19A51B760029BA70 /* Search */,
 				9515E4FB197826F40055383B /* Social Icons */,
 				9515E4F2197825790055383B /* Icons */,
@@ -964,9 +973,11 @@
 				95C499CD19587FC900478987 /* search.png in Resources */,
 				951FCA39199938A60078BA52 /* splash_facebook@2x.jpg in Resources */,
 				951FCA37199938A60078BA52 /* splash_email@2x.jpg in Resources */,
+				4E2DA3EF19DA650400F86F03 /* setting_btn@2x.png in Resources */,
 				9515E4E3197820720055383B /* salesforce_logo.jpg in Resources */,
 				9515E50F197827070055383B /* social_twitter@2x.jpg in Resources */,
 				954E9B68198292BD00F4F29F /* circle_mask.png in Resources */,
+				4E2DA3EE19DA650400F86F03 /* setting_btn.png in Resources */,
 				95B63DB41974505800639D7A /* meet_placeholder.jpg in Resources */,
 				95C86BF71958AB5A001279B1 /* contact-card-yellow@2x.png in Resources */,
 				9515E506197827070055383B /* social_facebook.jpg in Resources */,
@@ -986,6 +997,7 @@
 				956121C619A51B880029BA70 /* search_calendar@2x.png in Resources */,
 				9515E50E197827070055383B /* social_twitter.jpg in Resources */,
 				9515E50D197827070055383B /* social_salesforce@2x.jpg in Resources */,
+				4E2DA3EB19DA63EB00F86F03 /* add_contact.png in Resources */,
 				9515E4E4197820720055383B /* salesforce_logo@2x.jpg in Resources */,
 				954E9B5B198282E100F4F29F /* reon_welcome.jpg in Resources */,
 				954E9B6A1982974700F4F29F /* circle_mask.jpg in Resources */,
@@ -1203,14 +1215,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Water's Edge Partners, LLC (Z5RAPHGVUW)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Water's Edge Partners, LLC (Z5RAPHGVUW)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "REON/REON-Prefix.pch";
 				INFOPLIST_FILE = "REON/REON-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = REON;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "473201aa-bcef-40fa-97ee-a6ab977c515e";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1221,14 +1233,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Water's Edge Partners, LLC (Z5RAPHGVUW)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Water's Edge Partners, LLC (Z5RAPHGVUW)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "REON/REON-Prefix.pch";
 				INFOPLIST_FILE = "REON/REON-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = REON;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "473201aa-bcef-40fa-97ee-a6ab977c515e";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
