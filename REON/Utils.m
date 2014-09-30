@@ -643,4 +643,8 @@ static NSString *apiEndpoint = @"http://api.reon.social/index2.php";
     
 }
 
++(UIImage *) imageFromURL: (NSURL *)imageUrl{
+    return [UIImage imageWithData: [NSData dataWithContentsOfURL:imageUrl]];
+}
+
 @end

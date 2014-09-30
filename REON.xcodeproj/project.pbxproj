@@ -193,7 +193,7 @@
 		4E36C4441991614100C6E049 /* MapPin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPin.m; sourceTree = "<group>"; };
 		4EE6352E19C8160100C32DF4 /* ReonSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReonSettings.h; sourceTree = "<group>"; };
 		4EE6352F19C8160100C32DF4 /* ReonSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReonSettings.m; sourceTree = "<group>"; };
-		86AB921BEB19492DBBEA90FB /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		5753DB796CF87FDF0C0AD35C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		950E046F199F99DC00250B29 /* DateUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateUtil.h; sourceTree = "<group>"; };
 		950E0470199F99DC00250B29 /* DateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateUtil.m; sourceTree = "<group>"; };
 		950E0472199F99DC00250B29 /* DMLazyScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMLazyScrollView.h; sourceTree = "<group>"; };
@@ -384,6 +384,7 @@
 		95F0618F19759C6A009B719D /* pendingRequests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pendingRequests.m; sourceTree = "<group>"; };
 		95F3C51F198827BE0060F6BB /* SocialCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialCell.h; sourceTree = "<group>"; };
 		95F3C520198827BE0060F6BB /* SocialCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialCell.m; sourceTree = "<group>"; };
+		E3A89DC0236433CD12371321 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -618,7 +619,7 @@
 				95C499B61958760100478987 /* REONTests */,
 				95C499901958760100478987 /* Frameworks */,
 				95C4998F1958760100478987 /* Products */,
-				86AB921BEB19492DBBEA90FB /* Pods.xcconfig */,
+				AFD2F4F23FBAA99266E1E512 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -797,6 +798,15 @@
 			name = "Custom Objects";
 			sourceTree = "<group>";
 		};
+		AFD2F4F23FBAA99266E1E512 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5753DB796CF87FDF0C0AD35C /* Pods.debug.xcconfig */,
+				E3A89DC0236433CD12371321 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -847,7 +857,7 @@
 				ORGANIZATIONNAME = OWWS;
 				TargetAttributes = {
 					95C4998D1958760100478987 = {
-						DevelopmentTeam = 5VFAKCY5NX;
+						DevelopmentTeam = Z5RAPHGVUW;
 						SystemCapabilities = {
 							com.apple.iOS = {
 								enabled = 1;
@@ -1024,7 +1034,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1189,7 +1199,7 @@
 		};
 		95C499C11958760100478987 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86AB921BEB19492DBBEA90FB /* Pods.xcconfig */;
+			baseConfigurationReference = 5753DB796CF87FDF0C0AD35C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1207,7 +1217,7 @@
 		};
 		95C499C21958760100478987 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86AB921BEB19492DBBEA90FB /* Pods.xcconfig */;
+			baseConfigurationReference = E3A89DC0236433CD12371321 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

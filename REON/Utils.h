@@ -51,4 +51,6 @@ typedef enum : NSUInteger {
 +(NSArray *) contactsByYear: (int)y month:(int)m;
 +(NSArray *) contactsByYear: (int)y;
 
++(UIImage *) imageFromURL: (NSURL *)imageUrl;
+
 @end
