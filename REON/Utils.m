@@ -16,10 +16,10 @@
 @implementation Utils
 
 static NSString *apiEndpoint = @"http://api.reon.social/index2.php";
-
+//static NSString *apiEndpoint = @"http://expertcyber.net/test/smartcardphase2/reon/index2.php";
 //--- Get the current member id
 +(NSString *)currentMember{
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];   
     return [userDefaults valueForKey:@"memberId"];
 }
 
@@ -82,7 +82,7 @@ static NSString *apiEndpoint = @"http://api.reon.social/index2.php";
     [Utils apiPOSTWithDictionary:params andImage:imageData andImageName:@"profile_image" withCallback:^(BOOL success, NSDictionary *object) {
         
         if(success){
-            
+          // NSLog(@"dict %@",params);
             NSString *memberId = [object valueForKey:@"memberid"];
             NSString *memberName = [object valueForKey:@"name"];
             
@@ -104,6 +104,54 @@ static NSString *apiEndpoint = @"http://api.reon.social/index2.php";
         }
         
     }];
+    
+}
+
++(void) connectLinkedinUserWithDictionaryParams: (NSMutableDictionary *)params profileImageData: (NSData *)imageData setCallback: (void(^)(void))callback
+{
+    NSLog(@"params %@",params);
+    params[@"type"] = @"LinkedIn_connect";
+    
+    [Utils apiPOSTWithDictionary:params andImage:imageData andImageName:@"profile_image" withCallback:^(BOOL success, NSDictionary *object) {
+        
+        if(success){
+             NSLog(@"dict %@",object);
+            NSString *memberId = [object valueForKey:@"memberid"];
+            NSString *memberName = [object valueForKey:@"name"];
+            
+            NSLog(@"Linkedin name: %@", memberName);
+            
+            if(memberId){
+                
+                NSUserDefaults *standardDefaults = [NSUserDefaults standardUserDefaults];
+                [standardDefaults setValue:memberId forKey:@"memberId"];
+                [standardDefaults setValue:memberName forKey:@"memberName"];
+                [standardDefaults synchronize];
+                
+                if(callback){
+                    callback();
+                }
+                
+            }
+            
+        }
+        
+    }];
+    
+}
++(void) UpdateProfileImageWithDictionaryParams: (NSString *)ProfileID  profileImageData: (NSData *)imageData setCallback: (void(^)(void))callback
+{
+    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
+    params[@"type"] = @"UpdateImage";
+    params[@"id"] = ProfileID;
+    [Utils apiPOSTWithDictionary:params andImage:imageData andImageName:@"profile_image" withCallback:^(BOOL success, NSDictionary *object) {
+        
+        if(success){
+            NSLog(@"dict %@",object);
+        }
+        
+    }];
+        
     
 }
 
@@ -317,7 +365,9 @@ static NSString *apiEndpoint = @"http://api.reon.social/index2.php";
             
         }else{
         
-            AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+           // AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+            AppDelegate*  appDelegate =(AppDelegate *)[UIApplication sharedApplication].delegate;
+            
             NSManagedObjectContext *managedObjectContext = [appDelegate managedObjectContext];
             
             [meetObject setStatus:[params valueForKey:@"status"]];
@@ -391,7 +441,7 @@ static NSString *apiEndpoint = @"http://api.reon.social/index2.php";
     manager.responseSerializer = [AFJSONResponseSerializer serializer];
     
     [manager POST:apiEndpoint parameters:postObject success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        
+        NSLog(@"id %@",responseObject);
         callback(YES, responseObject);
     
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
@@ -641,10 +691,6 @@ static NSString *apiEndpoint = @"http://api.reon.social/index2.php";
     
     return contactsArray.count > 0 ? contactsArray : Nil;
     
-}
-
-+(UIImage *) imageFromURL: (NSURL *)imageUrl{
-    return [UIImage imageWithData: [NSData dataWithContentsOfURL:imageUrl]];
 }
 
 @end

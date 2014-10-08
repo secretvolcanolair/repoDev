@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13E28" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13F34" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="CDCard" representedClassName="CDCard" syncable="YES">
         <attribute name="cardCompany" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="cardEmailhome" optional="YES" attributeType="String" syncable="YES"/>
@@ -58,9 +58,36 @@
         <attribute name="showTwitter" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
+    <entity name="CDUserInfo" representedClassName="CDUserInfo" syncable="YES">
+        <attribute name="birthday" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="first_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="link" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lon" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="middle_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rEmail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rFacebookID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rFacebookToken" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rFBusername" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rImage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rLinkedInID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rLinkedInToken" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rPwd" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rSalesForce" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="street" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userinfoID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zip" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <elements>
         <element name="CDCard" positionX="-308" positionY="45" width="128" height="345"/>
         <element name="CDFBFriends" positionX="-234" positionY="198" width="128" height="45"/>
-        <element name="CDMeets" positionX="-162" positionY="45" width="128" height="540"/>
+        <element name="CDMeets" positionX="-162" positionY="45" width="128" height="538"/>
+        <element name="CDUserInfo" positionX="-225" positionY="207" width="128" height="403"/>
     </elements>
 </model>

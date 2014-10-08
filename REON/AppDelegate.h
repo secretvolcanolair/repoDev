@@ -13,6 +13,7 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate, CLLocationManagerDelegate>{
     broadcast *_broadcast;
+   
 }
 
 @property (strong, nonatomic) UIWindow *window;
@@ -25,5 +26,6 @@
 - (void) saveContext;
 - (NSURL *) applicationDocumentsDirectory;
 + (void) determineRootViewController;
+
 
 @end

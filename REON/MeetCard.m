@@ -27,7 +27,10 @@
     [Utils showSpinner];
     
     //--- Get Object Context
-    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+   // AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    
+    AppDelegate*  appDelegate =(AppDelegate *)[UIApplication sharedApplication].delegate;
+    
     NSManagedObjectContext *managedObjectContext = [appDelegate managedObjectContext];
     
     //--- Check for this contact IN coredata (check all phone numbers)

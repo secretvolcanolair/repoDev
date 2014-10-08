@@ -114,7 +114,9 @@
     
     else{
     
-        AppDelegate *applicationDelegate = [[UIApplication sharedApplication] delegate];
+       // AppDelegate *applicationDelegate = [[UIApplication sharedApplication] delegate];
+        AppDelegate*  applicationDelegate =(AppDelegate *)[UIApplication sharedApplication].delegate;
+        
         NSManagedObjectContext *managedObjectContent = [applicationDelegate managedObjectContext];
         
         CDCard *cards;

@@ -118,6 +118,9 @@
 
 -(void)registerIsFinishedEditing{
     [self revertViewToOriginalPosition];
+    
+    
+   
 }
 
 #pragma mark LoginDelegate
@@ -137,5 +140,7 @@
 - (IBAction)cancelRegistration:(id)sender {
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
+
+
 
 @end

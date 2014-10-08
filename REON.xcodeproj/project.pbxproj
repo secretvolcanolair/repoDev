@@ -14,13 +14,19 @@
 		4E226AFA198ABDDF00F78043 /* searchbyheader.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E226AF4198ABDDF00F78043 /* searchbyheader.png */; };
 		4E226AFB198ABDDF00F78043 /* whenicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E226AF5198ABDDF00F78043 /* whenicon.png */; };
 		4E226AFC198ABDDF00F78043 /* whereicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E226AF6198ABDDF00F78043 /* whereicon.png */; };
-		4E2DA3EB19DA63EB00F86F03 /* add_contact.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E2DA3EA19DA63EB00F86F03 /* add_contact.png */; };
-		4E2DA3EE19DA650400F86F03 /* setting_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E2DA3EC19DA650400F86F03 /* setting_btn.png */; };
-		4E2DA3EF19DA650400F86F03 /* setting_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E2DA3ED19DA650400F86F03 /* setting_btn@2x.png */; };
 		4E36C43F1991384100C6E049 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E36C43E1991384100C6E049 /* MapKit.framework */; };
 		4E36C442199138CD00C6E049 /* WhereSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E36C441199138CD00C6E049 /* WhereSearch.m */; };
 		4E36C4451991614100C6E049 /* MapPin.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E36C4441991614100C6E049 /* MapPin.m */; };
 		4EE6353019C8160100C32DF4 /* ReonSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE6352F19C8160100C32DF4 /* ReonSettings.m */; };
+		8434740919D73DA600E4B9AE /* LIALinkedInApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 843473FF19D73DA600E4B9AE /* LIALinkedInApplication.m */; };
+		8434740A19D73DA600E4B9AE /* LIALinkedInAuthorizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434740119D73DA600E4B9AE /* LIALinkedInAuthorizationViewController.m */; };
+		8434740B19D73DA600E4B9AE /* LIALinkedInHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434740319D73DA600E4B9AE /* LIALinkedInHttpClient.m */; };
+		8434740C19D73DA600E4B9AE /* NSString+LIAEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434740519D73DA600E4B9AE /* NSString+LIAEncode.m */; };
+		8434740D19D73DA600E4B9AE /* 01-refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 8434740719D73DA600E4B9AE /* 01-refresh.png */; };
+		8434740E19D73DA600E4B9AE /* 01-refresh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8434740819D73DA600E4B9AE /* 01-refresh@2x.png */; };
+		8434741219D7456A00E4B9AE /* setting_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 8434741019D7456A00E4B9AE /* setting_btn.png */; };
+		8434741319D7456A00E4B9AE /* setting_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8434741119D7456A00E4B9AE /* setting_btn@2x.png */; };
+		847D20FF19DA4CB9002076A4 /* CDUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D20FE19DA4CB9002076A4 /* CDUserInfo.m */; };
 		950E0479199F99DC00250B29 /* DateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 950E0470199F99DC00250B29 /* DateUtil.m */; };
 		950E047A199F99DC00250B29 /* DMLazyScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 950E0473199F99DC00250B29 /* DMLazyScrollView.m */; };
 		950E047B199F99DC00250B29 /* SACalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 950E0475199F99DC00250B29 /* SACalendar.m */; };
@@ -189,9 +195,6 @@
 		4E226AF4198ABDDF00F78043 /* searchbyheader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchbyheader.png; sourceTree = "<group>"; };
 		4E226AF5198ABDDF00F78043 /* whenicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whenicon.png; sourceTree = "<group>"; };
 		4E226AF6198ABDDF00F78043 /* whereicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whereicon.png; sourceTree = "<group>"; };
-		4E2DA3EA19DA63EB00F86F03 /* add_contact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_contact.png; sourceTree = "<group>"; };
-		4E2DA3EC19DA650400F86F03 /* setting_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting_btn.png; sourceTree = "<group>"; };
-		4E2DA3ED19DA650400F86F03 /* setting_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting_btn@2x.png"; sourceTree = "<group>"; };
 		4E36C43E1991384100C6E049 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		4E36C440199138CD00C6E049 /* WhereSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhereSearch.h; sourceTree = "<group>"; };
 		4E36C441199138CD00C6E049 /* WhereSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhereSearch.m; sourceTree = "<group>"; };
@@ -199,7 +202,22 @@
 		4E36C4441991614100C6E049 /* MapPin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPin.m; sourceTree = "<group>"; };
 		4EE6352E19C8160100C32DF4 /* ReonSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReonSettings.h; sourceTree = "<group>"; };
 		4EE6352F19C8160100C32DF4 /* ReonSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReonSettings.m; sourceTree = "<group>"; };
-		5753DB796CF87FDF0C0AD35C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		843473FE19D73DA600E4B9AE /* LIALinkedInApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIALinkedInApplication.h; sourceTree = "<group>"; };
+		843473FF19D73DA600E4B9AE /* LIALinkedInApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIALinkedInApplication.m; sourceTree = "<group>"; };
+		8434740019D73DA600E4B9AE /* LIALinkedInAuthorizationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIALinkedInAuthorizationViewController.h; sourceTree = "<group>"; };
+		8434740119D73DA600E4B9AE /* LIALinkedInAuthorizationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIALinkedInAuthorizationViewController.m; sourceTree = "<group>"; };
+		8434740219D73DA600E4B9AE /* LIALinkedInHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIALinkedInHttpClient.h; sourceTree = "<group>"; };
+		8434740319D73DA600E4B9AE /* LIALinkedInHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIALinkedInHttpClient.m; sourceTree = "<group>"; };
+		8434740419D73DA600E4B9AE /* NSString+LIAEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LIAEncode.h"; sourceTree = "<group>"; };
+		8434740519D73DA600E4B9AE /* NSString+LIAEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LIAEncode.m"; sourceTree = "<group>"; };
+		8434740719D73DA600E4B9AE /* 01-refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "01-refresh.png"; sourceTree = "<group>"; };
+		8434740819D73DA600E4B9AE /* 01-refresh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "01-refresh@2x.png"; sourceTree = "<group>"; };
+		8434741019D7456A00E4B9AE /* setting_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting_btn.png; sourceTree = "<group>"; };
+		8434741119D7456A00E4B9AE /* setting_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting_btn@2x.png"; sourceTree = "<group>"; };
+		8434742419D77DFC00E4B9AE /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		847D20FD19DA4CB9002076A4 /* CDUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDUserInfo.h; sourceTree = "<group>"; };
+		847D20FE19DA4CB9002076A4 /* CDUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDUserInfo.m; sourceTree = "<group>"; };
+		86AB921BEB19492DBBEA90FB /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		950E046F199F99DC00250B29 /* DateUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateUtil.h; sourceTree = "<group>"; };
 		950E0470199F99DC00250B29 /* DateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateUtil.m; sourceTree = "<group>"; };
 		950E0472199F99DC00250B29 /* DMLazyScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMLazyScrollView.h; sourceTree = "<group>"; };
@@ -390,7 +408,6 @@
 		95F0618F19759C6A009B719D /* pendingRequests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pendingRequests.m; sourceTree = "<group>"; };
 		95F3C51F198827BE0060F6BB /* SocialCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialCell.h; sourceTree = "<group>"; };
 		95F3C520198827BE0060F6BB /* SocialCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialCell.m; sourceTree = "<group>"; };
-		E3A89DC0236433CD12371321 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -425,6 +442,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		843473FD19D73DA600E4B9AE /* IOSLinkedInAPI */ = {
+			isa = PBXGroup;
+			children = (
+				843473FE19D73DA600E4B9AE /* LIALinkedInApplication.h */,
+				843473FF19D73DA600E4B9AE /* LIALinkedInApplication.m */,
+				8434740019D73DA600E4B9AE /* LIALinkedInAuthorizationViewController.h */,
+				8434740119D73DA600E4B9AE /* LIALinkedInAuthorizationViewController.m */,
+				8434740219D73DA600E4B9AE /* LIALinkedInHttpClient.h */,
+				8434740319D73DA600E4B9AE /* LIALinkedInHttpClient.m */,
+				8434740419D73DA600E4B9AE /* NSString+LIAEncode.h */,
+				8434740519D73DA600E4B9AE /* NSString+LIAEncode.m */,
+				8434740619D73DA600E4B9AE /* Resources */,
+			);
+			path = IOSLinkedInAPI;
+			sourceTree = "<group>";
+		};
+		8434740619D73DA600E4B9AE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8434740719D73DA600E4B9AE /* 01-refresh.png */,
+				8434740819D73DA600E4B9AE /* 01-refresh@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		950E046E199F99CC00250B29 /* SACalendar */ = {
 			isa = PBXGroup;
 			children = (
@@ -597,6 +639,8 @@
 				95E5169719B7470C0091F91E /* CDMeets.m */,
 				9521F13D197D96EB001A078C /* CDCard.h */,
 				9521F13E197D96EB001A078C /* CDCard.m */,
+				847D20FD19DA4CB9002076A4 /* CDUserInfo.h */,
+				847D20FE19DA4CB9002076A4 /* CDUserInfo.m */,
 			);
 			name = CoreData;
 			sourceTree = "<group>";
@@ -621,11 +665,12 @@
 		95C499851958760100478987 = {
 			isa = PBXGroup;
 			children = (
+				843473FD19D73DA600E4B9AE /* IOSLinkedInAPI */,
 				95C499991958760100478987 /* REON */,
 				95C499B61958760100478987 /* REONTests */,
 				95C499901958760100478987 /* Frameworks */,
 				95C4998F1958760100478987 /* Products */,
-				AFD2F4F23FBAA99266E1E512 /* Pods */,
+				86AB921BEB19492DBBEA90FB /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -641,6 +686,7 @@
 		95C499901958760100478987 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8434742419D77DFC00E4B9AE /* libsqlite3.0.dylib */,
 				4E36C43E1991384100C6E049 /* MapKit.framework */,
 				95638266198807A200247693 /* MessageUI.framework */,
 				952AD5BE1986B89700A04F7C /* QuartzCore.framework */,
@@ -733,13 +779,12 @@
 		95C499C819587F8700478987 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				4E2DA3EC19DA650400F86F03 /* setting_btn.png */,
-				4E2DA3ED19DA650400F86F03 /* setting_btn@2x.png */,
-				4E2DA3EA19DA63EB00F86F03 /* add_contact.png */,
 				956121BE19A51B760029BA70 /* Search */,
 				9515E4FB197826F40055383B /* Social Icons */,
 				9515E4F2197825790055383B /* Icons */,
 				9515E4E5197824710055383B /* Star Icons */,
+				8434741019D7456A00E4B9AE /* setting_btn.png */,
+				8434741119D7456A00E4B9AE /* setting_btn@2x.png */,
 				952C01DA19B39C7B0081523B /* r_circle.jpg */,
 				952C01DB19B39C7B0081523B /* r_circle@2x.jpg */,
 				956121BA19A50E000029BA70 /* map_search.png */,
@@ -807,15 +852,6 @@
 			name = "Custom Objects";
 			sourceTree = "<group>";
 		};
-		AFD2F4F23FBAA99266E1E512 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5753DB796CF87FDF0C0AD35C /* Pods.debug.xcconfig */,
-				E3A89DC0236433CD12371321 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -868,6 +904,9 @@
 					95C4998D1958760100478987 = {
 						DevelopmentTeam = Z5RAPHGVUW;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.iOS = {
 								enabled = 1;
 							};
@@ -901,6 +940,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8434740D19D73DA600E4B9AE /* 01-refresh.png in Resources */,
 				95C86BF21958AB5A001279B1 /* contact-card-green.png in Resources */,
 				95C86BF31958AB5A001279B1 /* contact-card-green@2x.png in Resources */,
 				95C499DD1958834000478987 /* new.png in Resources */,
@@ -911,6 +951,7 @@
 				951FCA36199938A60078BA52 /* splash_email.jpg in Resources */,
 				9515E507197827070055383B /* social_facebook@2x.jpg in Resources */,
 				956121CA19A51B880029BA70 /* search_text@2x.png in Resources */,
+				8434741219D7456A00E4B9AE /* setting_btn.png in Resources */,
 				956121C919A51B880029BA70 /* search_text.png in Resources */,
 				954E9B59198282E100F4F29F /* icon_profile.jpg in Resources */,
 				956121C519A51B880029BA70 /* search_calendar.png in Resources */,
@@ -956,6 +997,7 @@
 				954E9B58198282E100F4F29F /* icon_pencil@2x.jpg in Resources */,
 				956121BD19A50E010029BA70 /* map_search@2x.png in Resources */,
 				954E9B53198282E100F4F29F /* icon_envelope.jpg in Resources */,
+				8434740E19D73DA600E4B9AE /* 01-refresh@2x.png in Resources */,
 				4E226AFC198ABDDF00F78043 /* whereicon.png in Resources */,
 				95C499A91958760100478987 /* Images.xcassets in Resources */,
 				956382531987D89700247693 /* icon_comments@2x.png in Resources */,
@@ -973,11 +1015,9 @@
 				95C499CD19587FC900478987 /* search.png in Resources */,
 				951FCA39199938A60078BA52 /* splash_facebook@2x.jpg in Resources */,
 				951FCA37199938A60078BA52 /* splash_email@2x.jpg in Resources */,
-				4E2DA3EF19DA650400F86F03 /* setting_btn@2x.png in Resources */,
 				9515E4E3197820720055383B /* salesforce_logo.jpg in Resources */,
 				9515E50F197827070055383B /* social_twitter@2x.jpg in Resources */,
 				954E9B68198292BD00F4F29F /* circle_mask.png in Resources */,
-				4E2DA3EE19DA650400F86F03 /* setting_btn.png in Resources */,
 				95B63DB41974505800639D7A /* meet_placeholder.jpg in Resources */,
 				95C86BF71958AB5A001279B1 /* contact-card-yellow@2x.png in Resources */,
 				9515E506197827070055383B /* social_facebook.jpg in Resources */,
@@ -997,11 +1037,11 @@
 				956121C619A51B880029BA70 /* search_calendar@2x.png in Resources */,
 				9515E50E197827070055383B /* social_twitter.jpg in Resources */,
 				9515E50D197827070055383B /* social_salesforce@2x.jpg in Resources */,
-				4E2DA3EB19DA63EB00F86F03 /* add_contact.png in Resources */,
 				9515E4E4197820720055383B /* salesforce_logo@2x.jpg in Resources */,
 				954E9B5B198282E100F4F29F /* reon_welcome.jpg in Resources */,
 				954E9B6A1982974700F4F29F /* circle_mask.jpg in Resources */,
 				95C499DF1958834000478987 /* profile.png in Resources */,
+				8434741319D7456A00E4B9AE /* setting_btn@2x.png in Resources */,
 				954E9B54198282E100F4F29F /* icon_envelope@2x.jpg in Resources */,
 				9515E50B197827070055383B /* social_linkedin@2x.jpg in Resources */,
 				95C499E01958834000478987 /* profile@2x.png in Resources */,
@@ -1046,7 +1086,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1059,6 +1099,7 @@
 				956382651987E95900247693 /* MeetCardMain.m in Sources */,
 				95C86BEB19588A46001279B1 /* Meet.m in Sources */,
 				9515E4DF19777B8C0055383B /* meetConfirmation.m in Sources */,
+				8434740919D73DA600E4B9AE /* LIALinkedInApplication.m in Sources */,
 				956121CD19A51D930029BA70 /* SearchButton.m in Sources */,
 				95C499A71958760100478987 /* REON.xcdatamodeld in Sources */,
 				95A2B4321959DBDB00EB2642 /* peopleCircle.m in Sources */,
@@ -1075,6 +1116,7 @@
 				4E36C4451991614100C6E049 /* MapPin.m in Sources */,
 				95F0619019759C6A009B719D /* pendingRequests.m in Sources */,
 				950E047C199F99DC00250B29 /* SACalendarCell.m in Sources */,
+				8434740B19D73DA600E4B9AE /* LIALinkedInHttpClient.m in Sources */,
 				95F0618D19759BC6009B719D /* pendingRequestCell.m in Sources */,
 				956382591987DADD00247693 /* IdentityCell.m in Sources */,
 				95A2B4351959F82A00EB2642 /* NewCard.m in Sources */,
@@ -1091,13 +1133,16 @@
 				952C01D719B39B840081523B /* MonthCell.m in Sources */,
 				954731FD198A82F800F7330B /* MyContacts.m in Sources */,
 				9563825F1987DAF500247693 /* PhoneCell.m in Sources */,
+				847D20FF19DA4CB9002076A4 /* CDUserInfo.m in Sources */,
 				95E5169819B7470C0091F91E /* CDMeets.m in Sources */,
 				95C499E61958847A00478987 /* Card.m in Sources */,
 				950E047F199F9A8800250B29 /* WhenSearch.m in Sources */,
+				8434740C19D73DA600E4B9AE /* NSString+LIAEncode.m in Sources */,
 				95CACAF119AF9A1000166A51 /* WhenSearchMonthView.m in Sources */,
 				951FCA4019993EFE0078BA52 /* Splash.m in Sources */,
 				4EE6353019C8160100C32DF4 /* ReonSettings.m in Sources */,
 				954E9B721982D49E00F4F29F /* Login.m in Sources */,
+				8434740A19D73DA600E4B9AE /* LIALinkedInAuthorizationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1211,36 +1256,36 @@
 		};
 		95C499C11958760100478987 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5753DB796CF87FDF0C0AD35C /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 86AB921BEB19492DBBEA90FB /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Water's Edge Partners, LLC (Z5RAPHGVUW)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Water's Edge Partners, LLC (Z5RAPHGVUW)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "REON/REON-Prefix.pch";
 				INFOPLIST_FILE = "REON/REON-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = REON;
-				PROVISIONING_PROFILE = "473201aa-bcef-40fa-97ee-a6ab977c515e";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		95C499C21958760100478987 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E3A89DC0236433CD12371321 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 86AB921BEB19492DBBEA90FB /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Water's Edge Partners, LLC (Z5RAPHGVUW)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Water's Edge Partners, LLC (Z5RAPHGVUW)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "REON/REON-Prefix.pch";
 				INFOPLIST_FILE = "REON/REON-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = REON;
-				PROVISIONING_PROFILE = "473201aa-bcef-40fa-97ee-a6ab977c515e";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

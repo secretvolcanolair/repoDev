@@ -49,7 +49,7 @@
     //--- Event Cells
     else if(cellYear <= currentYear && cellMonth <= currentMonth){
         
-        NSString *keyString = [NSString stringWithFormat:@"%li%li%li", cellMonth, (indexPath.row+1), cellYear];
+        NSString *keyString = [NSString stringWithFormat:@"%li%i%li", (long)cellMonth, (indexPath.row+1), (long)cellYear];
         
         if([eventDictionary objectForKey:keyString]){
             cell.isEvent = YES;

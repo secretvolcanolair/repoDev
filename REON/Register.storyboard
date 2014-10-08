@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="1g7-Ie-4HO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="1g7-Ie-4HO">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -49,11 +49,25 @@
                                             <constraint firstAttribute="height" constant="42" id="bCp-A6-Hxg"/>
                                             <constraint firstAttribute="width" constant="199" id="pNh-SP-0YF"/>
                                         </constraints>
+                                        <state key="normal" image="splash_linkedin.jpg">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="linkedInClicked:" destination="QVn-jN-cP3" eventType="touchUpInside" id="qvy-gb-fFO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHS-fu-Hat">
+                                        <rect key="frame" x="61" y="120" width="199" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="1oi-oK-qZE"/>
+                                            <constraint firstAttribute="width" constant="199" id="iDu-Q5-8xq"/>
+                                        </constraints>
                                         <state key="normal" image="splash_email.jpg">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="emailLogin:" destination="QVn-jN-cP3" eventType="touchUpInside" id="C8u-Yb-xYF"/>
+                                            <action selector="emailLogin:" destination="QVn-jN-cP3" eventType="touchUpInside" id="Zfe-fE-hVd"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -110,6 +124,7 @@
         <image name="splash.jpg" width="1204" height="938"/>
         <image name="splash_email.jpg" width="199" height="42"/>
         <image name="splash_facebook.jpg" width="199" height="42"/>
+        <image name="splash_linkedin.jpg" width="199" height="42"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

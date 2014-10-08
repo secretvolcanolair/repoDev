@@ -22,7 +22,9 @@
     self = [super initWithCoder:aDecoder];
     
     //--- Set object context
-    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+   // AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    AppDelegate*  appDelegate =(AppDelegate *)[UIApplication sharedApplication].delegate;
+    
     managedObjectContext = [appDelegate managedObjectContext];
     
     return self;

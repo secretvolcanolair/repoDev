@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F7D5752C765690C5E4A4A626"
+               BlueprintIdentifier = "C6A5F3CA3DBE406D820526C4"
                BuildableName = "libPods-SVGeocoder.a"
                BlueprintName = "Pods-SVGeocoder"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -22,7 +22,7 @@
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
-    
+   
     [AppDelegate determineRootViewController];
     
     //--- Keep track of iBeacon region
@@ -67,7 +67,7 @@
     
     //--- Member Logged In
     if([Utils currentMember]){
-        NSLog(@"Init with user id: %@", [Utils currentMember]);
+        NSLog(@"Init with user Id: %@", [Utils currentMember]);
         UINavigationController *generalNavigationController = [[UIStoryboard storyboardWithName:@"General" bundle:Nil] instantiateInitialViewController];
         rootWindow.rootViewController = generalNavigationController;
         [rootWindow makeKeyAndVisible];
@@ -176,5 +176,7 @@
 - (NSURL *)applicationDocumentsDirectory{
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
+
+
 
 @end

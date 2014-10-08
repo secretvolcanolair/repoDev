@@ -11,6 +11,7 @@
 #import "CDCard.h"
 #import "CDMeets.h"
 #import "Utils.h"
+#import <UIImageView+WebCache.h>
 #import "MeetCard.h"
 #import "NewCard.h"
 
@@ -39,7 +40,9 @@
     [self setTitle:[Utils currentMemberName]];
     
     //--- Get Object Context
-    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+  //  AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    AppDelegate*  appDelegate =(AppDelegate *)[UIApplication sharedApplication].delegate;
+    
     managedObjectContext = [appDelegate managedObjectContext];
     
     [self populateRecentlyMet];
@@ -553,8 +556,7 @@
     if([[peopleObject valueForKey:@"name"] length] > 0){
         
         cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"KnowCell" forIndexPath:indexPath];
-        //[cell.imageView setImageWithURL:[NSURL URLWithString:[peopleObject valueForKey:@"image"]]];
-        [cell.imageView setImage:[Utils imageFromURL:[NSURL URLWithString:[peopleObject valueForKey:@"image"]]]];
+        [cell.imageView setImageWithURL:[NSURL URLWithString:[peopleObject valueForKey:@"image"]]];
         [cell.nameLabel setText:[peopleObject valueForKey:@"name"]];
         
     }
@@ -563,8 +565,7 @@
     else{
         
         cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
-        [cell.imageView setImage:[Utils imageFromURL:[NSURL URLWithString:[peopleObject valueForKey:@"image"]]]];
-        //[cell.imageView setImageWithURL:[NSURL URLWithString:[peopleObject valueForKey:@"image"]]];
+        [cell.imageView setImageWithURL:[NSURL URLWithString:[peopleObject valueForKey:@"image"]]];
         
     }
     

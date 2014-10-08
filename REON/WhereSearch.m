@@ -44,7 +44,9 @@
     [mapview addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(mapTapped)]];
     
     //--- Establish the managed object context (For CoreData)
-    appDelegate = [[UIApplication sharedApplication] delegate];
+   // appDelegate = [[UIApplication sharedApplication] delegate];
+     appDelegate =(AppDelegate *)[UIApplication sharedApplication].delegate;
+    
     managedObjectContext = [appDelegate managedObjectContext];
     
     //--- Plot Pins

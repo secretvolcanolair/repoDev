@@ -31,6 +31,7 @@
 - (IBAction)proceedWithSignIn:(id)sender {
     
     [Utils loginWithEmailAddress:emailField.text andPassword:passwordField.text withCallback:^{
+        
         [AppDelegate determineRootViewController];
     }];
     

@@ -35,7 +35,9 @@ static float dim = 0.2;
     pendingMeetObject = pendingMeet;
     
     //--- Set object context
-    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+   // AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    AppDelegate*  appDelegate =(AppDelegate *)[UIApplication sharedApplication].delegate;
+    
     managedObjectContext = [appDelegate managedObjectContext];
     
     return self;

@@ -27,6 +27,9 @@ PODS:
   - ECPhoneNumberFormatter (0.1.1)
   - Facebook-iOS-SDK (3.17.0):
     - Bolts
+  - SDWebImage (3.6):
+    - SDWebImage/Core
+  - SDWebImage/Core (3.6)
   - SVGeocoder (0.1)
   - UIImage-Resize (1.0.1)
 
@@ -37,6 +40,7 @@ DEPENDENCIES:
   - DSXActivityIndicator
   - ECPhoneNumberFormatter
   - Facebook-iOS-SDK
+  - SDWebImage
   - SVGeocoder
   - UIImage-Resize
 
@@ -48,7 +52,8 @@ SPEC CHECKSUMS:
   DSXActivityIndicator: 5994788fe8987f36c2d59f8995a3c3dddaf21e79
   ECPhoneNumberFormatter: 5e178027d1d43472187c3f623e7b69b89fdb3187
   Facebook-iOS-SDK: f20274d809f112ba540842e2b6cbe50128d51b7b
+  SDWebImage: c6989652c1cdf27cbdf3f56957e2030f825af5bc
   SVGeocoder: 67f187000ddf9abdd979137d136cd8b30b53e2f6
   UIImage-Resize: fc57263eed2cd98f74e5ba4848bedae979a0bdf0
 
-COCOAPODS: 0.34.1
+COCOAPODS: 0.33.1

@@ -23,6 +23,9 @@ typedef enum : NSUInteger {
 +(NSString *)currentMemberName;
 +(void) registerNewUserWithDictionaryParams: (NSMutableDictionary *)params profileImageData: (NSData *)imageData setCallback: (void(^)(void))callback;
 +(void) connectFacebookUserWithDictionaryParams: (NSMutableDictionary *)params profileImageData: (NSData *)imageData setCallback: (void(^)(void))callback;
+
++(void) connectLinkedinUserWithDictionaryParams: (NSMutableDictionary *)params profileImageData: (NSData *)imageData setCallback: (void(^)(void))callback;
+
 +(void) loginWithEmailAddress: (NSString *)email andPassword: (NSString *)password withCallback: (void(^)(void))callback;
 +(void) shareCard: (CDCard *)card withMember: (NSString *)memberId callback: (void(^)(void))callback;
 +(void) queryMemberInfo: (NSArray *)memberIDArray withCallback: (void(^)(NSDictionary *queryObject))callback;
@@ -32,11 +35,14 @@ typedef enum : NSUInteger {
 
 +(void) apiPOSTWithDictionary: (NSDictionary *)postObject withCallback: (void(^)(BOOL success, NSDictionary *object))callback;
 +(void) apiPOSTWithDictionary: (NSDictionary *)postObject andImage: (NSData *)imageData andImageName: (NSString *)imageName withCallback: (void(^)(BOOL success, NSDictionary *object))callback;
++(void) UpdateProfileImageWithDictionaryParams: (NSString *)ProfileID  profileImageData: (NSData *)imageData setCallback: (void(^)(void))callback;
 
 -(CLLocationCoordinate2D) getLocation;
 
 + (UIImage*) maskImage:(UIImage *)image withMask:(UIImage *)maskImage;
 +(UIImage *) screenshotFromUIImageView: (UIImageView *)imgView;
+
+
 
 +(void)showSpinner;
 +(void)hideSpinner;
@@ -50,7 +56,5 @@ typedef enum : NSUInteger {
 +(NSArray *) contactsByYear: (int)y month:(int)m day:(int)d;
 +(NSArray *) contactsByYear: (int)y month:(int)m;
 +(NSArray *) contactsByYear: (int)y;
-
-+(UIImage *) imageFromURL: (NSURL *)imageUrl;
 
 @end
